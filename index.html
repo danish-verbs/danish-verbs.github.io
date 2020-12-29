@@ -1,0 +1,4798 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+  font-weight: bold;
+  color: orange;
+}
+
+a:hover {
+  color: red;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Danish verbs</h2>
+
+<p>
+  This webpage allows you to easily explore the different tenses of Danish verbs and their meaning in English.
+  You can search by any column. In case you spot any mistake, feel free to
+  <a href="https://github.com/danish-verbs/danish-verbs.github.io/issues">open an issue</a> or create a
+  <a href="https://github.com/danish-verbs/danish-verbs.github.io/pulls">pull request</a> on
+  <a href="https://github.com/danish-verbs/">GitHub</a>.
+</p>
+
+<p style="text-align:center">
+  Vi taler<br>
+  <img src="denmark-flag-small.png" alt="denmark-flag-small" width="5%" height="5%"><br>
+  Dansk!
+</p>
+
+<p style="text-align:center">
+  Author: <a href="https://lorenzogentile404.github.io/">Lorenzo</a>
+</p>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for verbs.." title="Type in a verb">
+
+<table id="myTable">
+  <tr class="header">
+    <th>English meaning</th>
+    <th>Infinitive</th>
+    <th>Present tense</th>
+    <th>Past tense</th>
+    <th>Perfect participle</th>
+    <th>Past perfect</th>
+    <th>Imperative</th>
+  </tr>
+  <tr>
+    <td>to accept</td>
+    <td>at acceptere</td>
+    <td>accepterer</td>
+    <td>accepterede</td>
+    <td>har accepteret</td>
+    <td>havde accepteret</td>
+    <td>accepter</td>
+  </tr>
+  <tr>
+    <td>to separate</td>
+    <td>at adskille</td>
+    <td>adskiller</td>
+    <td>adskilte</td>
+    <td>har adskilt</td>
+    <td>havde adskilt</td>
+    <td>adskil</td>
+  </tr>
+  <tr>
+    <td>to warn</td>
+    <td>at advare</td>
+    <td>advarer</td>
+    <td>advarede</td>
+    <td>har advaret</td>
+    <td>havde advaret</td>
+    <td>advar</td>
+  </tr>
+  <tr>
+    <td>to interrupt</td>
+    <td>at afbryde</td>
+    <td>afbryder</td>
+    <td>afbrød</td>
+    <td>har afbrudt</td>
+    <td>havde afbrudt</td>
+    <td>afbryd</td>
+  </tr>
+  <tr>
+    <td>to deliver</td>
+    <td>at afgive</td>
+    <td>afgiver</td>
+    <td>afgav</td>
+    <td>har afgivet</td>
+    <td>havde afgivet</td>
+    <td>afgiv</td>
+  </tr>
+  <tr>
+    <td>to determine</td>
+    <td>at afgøre</td>
+    <td>afgør</td>
+    <td>afgjorde</td>
+    <td>har afgjort</td>
+    <td>havde afgjort</td>
+    <td>afgør</td>
+  </tr>
+  <tr>
+    <td>to deliver</td>
+    <td>at aflevere</td>
+    <td>afleverer</td>
+    <td>afleverede</td>
+    <td>har afleveret</td>
+    <td>havde afleveret</td>
+    <td>aflever</td>
+  </tr>
+  <tr>
+    <td>to cancel</td>
+    <td>at aflyse</td>
+    <td>aflyser</td>
+    <td>aflyste</td>
+    <td>har aflyst</td>
+    <td>havde aflyst</td>
+    <td>aflys</td>
+  </tr>
+  <tr>
+    <td>to supersede</td>
+    <td>at afløse</td>
+    <td>afløser</td>
+    <td>afløste</td>
+    <td>har afløst</td>
+    <td>havde afløst</td>
+    <td>afløs</td>
+  </tr>
+  <tr>
+    <td>to abolish</td>
+    <td>at afskaffe</td>
+    <td>afskaffer</td>
+    <td>afskaffede</td>
+    <td>har afskaffet</td>
+    <td>havde afskaffet</td>
+    <td>afskaf</td>
+  </tr>
+  <tr>
+    <td>to complete</td>
+    <td>at afslutte</td>
+    <td>afslutter</td>
+    <td>afsluttede</td>
+    <td>har afsluttet</td>
+    <td>havde afsluttet</td>
+    <td>afslut</td>
+  </tr>
+  <tr>
+    <td>to reveal</td>
+    <td>at afsløre</td>
+    <td>afslører</td>
+    <td>afslørede</td>
+    <td>har afsløret</td>
+    <td>havde afsløret</td>
+    <td>afslør</td>
+  </tr>
+  <tr>
+    <td>to reject</td>
+    <td>at afvise</td>
+    <td>afviser</td>
+    <td>afviste</td>
+    <td>har afvist</td>
+    <td>havde afvist</td>
+    <td>afvis</td>
+  </tr>
+  <tr>
+    <td>to recommend</td>
+    <td>at anbefale</td>
+    <td>anbefaler</td>
+    <td>anbefalede</td>
+    <td>har anbefalet</td>
+    <td>havde anbefalet</td>
+    <td>anbefal</td>
+  </tr>
+  <tr>
+    <td>to place</td>
+    <td>at anbringe</td>
+    <td>anbringer</td>
+    <td>anbragte</td>
+    <td>har anbragt</td>
+    <td>havde anbragt</td>
+    <td>anbring</td>
+  </tr>
+  <tr>
+    <td>to know</td>
+    <td>at ane</td>
+    <td>aner</td>
+    <td>anede</td>
+    <td>har anet</td>
+    <td>havde anet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to recognize</td>
+    <td>at anerkende</td>
+    <td>anerkender</td>
+    <td>anerkendte</td>
+    <td>har anerkendt</td>
+    <td>havde anerkendt</td>
+    <td>anerkend</td>
+  </tr>
+  <tr>
+    <td>to enter</td>
+    <td>at angive</td>
+    <td>angiver</td>
+    <td>angav</td>
+    <td>har angivet</td>
+    <td>havde angivet</td>
+    <td>angiv</td>
+  </tr>
+  <tr>
+    <td>to relate</td>
+    <td>at angå</td>
+    <td>angår</td>
+    <td>angik</td>
+    <td>har angået</td>
+    <td>havde angået</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to arrest</td>
+    <td>at anholde</td>
+    <td>anholder</td>
+    <td>anholdt</td>
+    <td>har anholdt</td>
+    <td>havde anholdt</td>
+    <td>anhold</td>
+  </tr>
+  <tr>
+    <td>to arrive</td>
+    <td>at ankomme</td>
+    <td>ankommer</td>
+    <td>ankom</td>
+    <td>er ankommet</td>
+    <td>var ankommet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to report</td>
+    <td>at anmelde</td>
+    <td>anmelder</td>
+    <td>anmeldte</td>
+    <td>har anmeldt</td>
+    <td>havde anmeldt</td>
+    <td>anmeld</td>
+  </tr>
+  <tr>
+    <td>to consider</td>
+    <td>at anse</td>
+    <td>anser</td>
+    <td>anså</td>
+    <td>har anset</td>
+    <td>havde anset</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to hire</td>
+    <td>at ansætte</td>
+    <td>ansætter</td>
+    <td>ansatte</td>
+    <td>har ansat</td>
+    <td>havde ansat</td>
+    <td>ansæt</td>
+  </tr>
+  <tr>
+    <td>to use</td>
+    <td>at anvende</td>
+    <td>anvender</td>
+    <td>anvendte</td>
+    <td>har anvendt</td>
+    <td>havde anvendt</td>
+    <td>anvend</td>
+  </tr>
+  <tr>
+    <td>to work</td>
+    <td>at arbejde</td>
+    <td>arbejder</td>
+    <td>arbejdede</td>
+    <td>har arbejdet</td>
+    <td>havde arbejdet</td>
+    <td>arbejd</td>
+  </tr>
+  <tr>
+    <td>to arrange</td>
+    <td>at arrangere</td>
+    <td>arrangerer</td>
+    <td>arrangerede</td>
+    <td>har arrangeret</td>
+    <td>havde arrangeret</td>
+    <td>arranger</td>
+  </tr>
+  <tr>
+    <td>to arrest</td>
+    <td>at arrestere</td>
+    <td>arresterer</td>
+    <td>arresterede</td>
+    <td>har arresteret</td>
+    <td>havde arresteret</td>
+    <td>arrester</td>
+  </tr>
+  <tr>
+    <td>to bake</td>
+    <td>at bage</td>
+    <td>bager</td>
+    <td>bagte</td>
+    <td>har bagt</td>
+    <td>havde bagt</td>
+    <td>bag</td>
+  </tr>
+  <tr>
+    <td>to knock</td>
+    <td>at banke</td>
+    <td>banker</td>
+    <td>bankede</td>
+    <td>har banket</td>
+    <td>havde banket</td>
+    <td>bank</td>
+  </tr>
+  <tr>
+    <td>to ask</td>
+    <td>at bede</td>
+    <td>beder</td>
+    <td>bad</td>
+    <td>har bedt</td>
+    <td>havde bedt</td>
+    <td>bed</td>
+  </tr>
+  <tr>
+    <td>to be at</td>
+    <td>at befinde</td>
+    <td>befinder</td>
+    <td>befandt</td>
+    <td>har befundet</td>
+    <td>havde befundet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to bury</td>
+    <td>at begrave</td>
+    <td>begraver</td>
+    <td>begravede</td>
+    <td>har begravet</td>
+    <td>havde begravet</td>
+    <td>begrav</td>
+  </tr>
+  <tr>
+    <td>to limit</td>
+    <td>at begrænse</td>
+    <td>begrænser</td>
+    <td>begrænsede</td>
+    <td>har begrænset</td>
+    <td>havde begrænset</td>
+    <td>begræns</td>
+  </tr>
+  <tr>
+    <td>to begin</td>
+    <td>at begynde</td>
+    <td>begynder</td>
+    <td>begyndte</td>
+    <td>er begyndt</td>
+    <td>var begyndt</td>
+    <td>begynd</td>
+  </tr>
+  <tr>
+    <td>to commit</td>
+    <td>at begå</td>
+    <td>begår</td>
+    <td>begik</td>
+    <td>har begået</td>
+    <td>havde begået</td>
+    <td>begå</td>
+  </tr>
+  <tr>
+    <td>to process</td>
+    <td>at behandle</td>
+    <td>behandler</td>
+    <td>behandlede</td>
+    <td>har behandlet</td>
+    <td>havde behandlet</td>
+    <td>behandl</td>
+  </tr>
+  <tr>
+    <td>to keep</td>
+    <td>at beholde</td>
+    <td>beholder</td>
+    <td>beholdt</td>
+    <td>har beholdt</td>
+    <td>havde beholdt</td>
+    <td>behold</td>
+  </tr>
+  <tr>
+    <td>to need</td>
+    <td>at behøve</td>
+    <td>behøver</td>
+    <td>behøvede</td>
+    <td>har behøvet</td>
+    <td>havde behøvet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to be sorry</td>
+    <td>at beklage</td>
+    <td>beklager</td>
+    <td>beklagede</td>
+    <td>har beklaget</td>
+    <td>havde beklaget</td>
+    <td>beklag</td>
+  </tr>
+  <tr>
+    <td>to confirm</td>
+    <td>at bekræfte</td>
+    <td>bekræfter</td>
+    <td>bekræftede</td>
+    <td>har bekræfted</td>
+    <td>havde bekræftet</td>
+    <td>bekræft</td>
+  </tr>
+  <tr>
+    <td>to notice</td>
+    <td>at bemærke</td>
+    <td>bemærker</td>
+    <td>bemærkede</td>
+    <td>har bemærket</td>
+    <td>havde bemærket</td>
+    <td>bemærk</td>
+  </tr>
+  <tr>
+    <td>to use</td>
+    <td>at benytte</td>
+    <td>benytter</td>
+    <td>benyttede</td>
+    <td>har benyttet</td>
+    <td>havde benyttet</td>
+    <td>benyt</td>
+  </tr>
+  <tr>
+    <td>to describe</td>
+    <td>at beskrive</td>
+    <td>beskriver</td>
+    <td>beskrev</td>
+    <td>har beskrevet</td>
+    <td>havde beskrevet</td>
+    <td>beskriv</td>
+  </tr>
+  <tr>
+    <td>to protect</td>
+    <td>at beskytte</td>
+    <td>beskytter</td>
+    <td>beskyttede</td>
+    <td>har beskyttet</td>
+    <td>havde beskyttet</td>
+    <td>beskyt</td>
+  </tr>
+  <tr>
+    <td>to decide</td>
+    <td>at beslutte</td>
+    <td>beslutter</td>
+    <td>besluttede</td>
+    <td>har besluttet</td>
+    <td>havde besluttet</td>
+    <td>beslut</td>
+  </tr>
+  <tr>
+    <td>to determine</td>
+    <td>at bestemme</td>
+    <td>bestemmer</td>
+    <td>bestemte</td>
+    <td>har bestemt</td>
+    <td>havde bestemt</td>
+    <td>bestem</td>
+  </tr>
+  <tr>
+    <td>to order</td>
+    <td>at bestille</td>
+    <td>bestiller</td>
+    <td>bestilte</td>
+    <td>har bestilt</td>
+    <td>havde bestilt</td>
+    <td>bestil</td>
+  </tr>
+  <tr>
+    <td>to pass</td>
+    <td>at bestå</td>
+    <td>består</td>
+    <td>bestod</td>
+    <td>har bestået</td>
+    <td>havde bestået</td>
+    <td>bestå</td>
+  </tr>
+  <tr>
+    <td>to occupy</td>
+    <td>at besætte</td>
+    <td>besætter</td>
+    <td>besatte</td>
+    <td>har besat</td>
+    <td>havde besat</td>
+    <td>besæt</td>
+  </tr>
+  <tr>
+    <td>to visit</td>
+    <td>at besøge</td>
+    <td>besøger</td>
+    <td>besøgte</td>
+    <td>har besøgt</td>
+    <td>havde besøgt</td>
+    <td>besøg</td>
+  </tr>
+  <tr>
+    <td>to pay</td>
+    <td>at betale</td>
+    <td>betaler</td>
+    <td>betalte</td>
+    <td>har betalt</td>
+    <td>havde betalt</td>
+    <td>betal</td>
+  </tr>
+  <tr>
+    <td>to mean</td>
+    <td>at betyde</td>
+    <td>betyder</td>
+    <td>betød</td>
+    <td>har betydet</td>
+    <td>havde betydet</td>
+    <td>betyd</td>
+  </tr>
+  <tr>
+    <td>to maintain</td>
+    <td>at bevare</td>
+    <td>bevarer</td>
+    <td>bevarede</td>
+    <td>har bevaret</td>
+    <td>havde bevaret</td>
+    <td>bevar</td>
+  </tr>
+  <tr>
+    <td>to prove</td>
+    <td>at bevise</td>
+    <td>beviser</td>
+    <td>beviste</td>
+    <td>har bevist</td>
+    <td>havde bevist</td>
+    <td>bevis</td>
+  </tr>
+  <tr>
+    <td>to move</td>
+    <td>at bevæge sig</td>
+    <td>bevæger sig</td>
+    <td>bevægede sig</td>
+    <td>har bevæget sig</td>
+    <td>havde bevæget sig</td>
+    <td>bevæg dig</td>
+  </tr>
+  <tr>
+    <td>to bite</td>
+    <td>at bide</td>
+    <td>bider</td>
+    <td>bed</td>
+    <td>har bidt</td>
+    <td>havde bidt</td>
+    <td>bid</td>
+  </tr>
+  <tr>
+    <td>to contribute</td>
+    <td>at bidrage</td>
+    <td>bidrager</td>
+    <td>bidrog</td>
+    <td>har bidraget</td>
+    <td>havde bidraget</td>
+    <td>bidrag</td>
+  </tr>
+  <tr>
+    <td>to bind</td>
+    <td>at binde</td>
+    <td>binder</td>
+    <td>bandt</td>
+    <td>har bundet</td>
+    <td>havde bundet</td>
+    <td>bind</td>
+  </tr>
+  <tr>
+    <td>to mix</td>
+    <td>at blande</td>
+    <td>blander</td>
+    <td>blandede</td>
+    <td>har blandet</td>
+    <td>havde blandet</td>
+    <td>bland</td>
+  </tr>
+  <tr>
+    <td>to become</td>
+    <td>at blive</td>
+    <td>bliver</td>
+    <td>blev</td>
+    <td>er blevet</td>
+    <td>var blevet</td>
+    <td>bliv</td>
+  </tr>
+  <tr>
+    <td>to blow</td>
+    <td>at blæse</td>
+    <td>blæser</td>
+    <td>blæste</td>
+    <td>har blæst</td>
+    <td>havde blæst</td>
+    <td>blæs</td>
+  </tr>
+  <tr>
+    <td>to live</td>
+    <td>at bo</td>
+    <td>bor</td>
+    <td>boede</td>
+    <td>har boet</td>
+    <td>havde boet</td>
+    <td>bo</td>
+  </tr>
+  <tr>
+    <td>to spread</td>
+    <td>at brede sig</td>
+    <td>breder sig</td>
+    <td>bredte sig</td>
+    <td>har bredt sig</td>
+    <td>havde bredt sig</td>
+    <td>bred dig</td>
+  </tr>
+  <tr>
+    <td>to bring</td>
+    <td>at bringe</td>
+    <td>bringer</td>
+    <td>bragte</td>
+    <td>har bragt</td>
+    <td>havde bragt</td>
+    <td>bring</td>
+  </tr>
+  <tr>
+    <td>to use</td>
+    <td>at bruge</td>
+    <td>bruger</td>
+    <td>brugte</td>
+    <td>har brugt</td>
+    <td>havde brugt</td>
+    <td>brug</td>
+  </tr>
+  <tr>
+    <td>to break</td>
+    <td>at bryde</td>
+    <td>bryder</td>
+    <td>brød</td>
+    <td>har brudt</td>
+    <td>havde brudt</td>
+    <td>bryd</td>
+  </tr>
+  <tr>
+    <td>to build</td>
+    <td>at bygge</td>
+    <td>bygger</td>
+    <td>byggede</td>
+    <td>har bygget</td>
+    <td>havde bygget</td>
+    <td>byg</td>
+  </tr>
+  <tr>
+    <td>to swap</td>
+    <td>at bytte</td>
+    <td>bytter</td>
+    <td>byttede</td>
+    <td>har byttet</td>
+    <td>havde byttet</td>
+    <td>byt</td>
+  </tr>
+  <tr>
+    <td>to wear</td>
+    <td>at bære</td>
+    <td>bærer</td>
+    <td>bar</td>
+    <td>har båret</td>
+    <td>havde båret</td>
+    <td>bær</td>
+  </tr>
+  <tr>
+    <td>to quote</td>
+    <td>at citere</td>
+    <td>citerer</td>
+    <td>citerede</td>
+    <td>har citeret</td>
+    <td>havde citeret</td>
+    <td>citer</td>
+  </tr>
+  <tr>
+    <td>to form</td>
+    <td>at danne</td>
+    <td>danner</td>
+    <td>dannede</td>
+    <td>har dannet</td>
+    <td>havde dannet</td>
+    <td>dan</td>
+  </tr>
+  <tr>
+    <td>to dance</td>
+    <td>at danse</td>
+    <td>danser</td>
+    <td>dansede</td>
+    <td>har danset</td>
+    <td>havde danset</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>to share</td>
+    <td>at dele</td>
+    <td>deler</td>
+    <td>delte</td>
+    <td>har delt</td>
+    <td>havde delt</td>
+    <td>del</td>
+  </tr>
+  <tr>
+    <td>to participate</td>
+    <td>at deltage</td>
+    <td>deltager</td>
+    <td>deltog</td>
+    <td>har deltaget</td>
+    <td>havde deltaget</td>
+    <td>deltag</td>
+  </tr>
+  <tr>
+    <td>to discuss</td>
+    <td>at diskutere</td>
+    <td>diskuterer</td>
+    <td>diskuterede</td>
+    <td>har diskuteret</td>
+    <td>havde diskuteret</td>
+    <td>diskuter</td>
+  </tr>
+  <tr>
+    <td>to dominate</td>
+    <td>at dominere</td>
+    <td>dominerer</td>
+    <td>dominerede</td>
+    <td>har domineret</td>
+    <td>havde domineret</td>
+    <td>dominer</td>
+  </tr>
+  <tr>
+    <td>to drag</td>
+    <td>at drage</td>
+    <td>drager</td>
+    <td>drog</td>
+    <td>har draget</td>
+    <td>havde draget</td>
+    <td>drag</td>
+  </tr>
+  <tr>
+    <td>to turn</td>
+    <td>at dreje</td>
+    <td>drejer</td>
+    <td>drejede</td>
+    <td>har drejet</td>
+    <td>havde drejet</td>
+    <td>dreje</td>
+  </tr>
+  <tr>
+    <td>to drink</td>
+    <td>at drikke</td>
+    <td>drikker</td>
+    <td>drak</td>
+    <td>har drukket</td>
+    <td>havde drukket</td>
+    <td>drik</td>
+  </tr>
+  <tr>
+    <td>to drive</td>
+    <td>at drive</td>
+    <td>driver</td>
+    <td>drev</td>
+    <td>har drevet</td>
+    <td>havde drevet</td>
+    <td>driv</td>
+  </tr>
+  <tr>
+    <td>to kill</td>
+    <td>at dræbe</td>
+    <td>dræber</td>
+    <td>dræbte</td>
+    <td>har dræbt</td>
+    <td>havde dræbt</td>
+    <td>dræb</td>
+  </tr>
+  <tr>
+    <td>to discuss</td>
+    <td>at drøfte</td>
+    <td>drøfter</td>
+    <td>drøftede</td>
+    <td>har drøftet</td>
+    <td>havde drøftet</td>
+    <td>drøft</td>
+  </tr>
+  <tr>
+    <td>to dream</td>
+    <td>at drømme</td>
+    <td>drømmer</td>
+    <td>drømte</td>
+    <td>har drømt</td>
+    <td>havde drømt</td>
+    <td>drøm</td>
+  </tr>
+  <tr>
+    <td>to appear</td>
+    <td>at dukke op</td>
+    <td>dukker op</td>
+    <td>dukkede op</td>
+    <td>er dukket op</td>
+    <td>var dukket op</td>
+    <td>duk op</td>
+  </tr>
+  <tr>
+    <td>to cover</td>
+    <td>at dække</td>
+    <td>dækker</td>
+    <td>dækkede</td>
+    <td>har dækket</td>
+    <td>havde dækket</td>
+    <td>dæk</td>
+  </tr>
+  <tr>
+    <td>to die</td>
+    <td>at dø</td>
+    <td>dør</td>
+    <td>døde</td>
+    <td>er død</td>
+    <td>var død</td>
+    <td>dø</td>
+  </tr>
+  <tr>
+    <td>to judge</td>
+    <td>at dømme</td>
+    <td>dømmer</td>
+    <td>dømte</td>
+    <td>har dømt</td>
+    <td>havde dømt</td>
+    <td>døm</td>
+  </tr>
+  <tr>
+    <td>to leave</td>
+    <td>at efterlade</td>
+    <td>efterlader</td>
+    <td>efterlod</td>
+    <td>har efterladt</td>
+    <td>havde efterladt</td>
+    <td>efterlad</td>
+  </tr>
+  <tr>
+    <td>to own</td>
+    <td>at eje</td>
+    <td>ejer</td>
+    <td>ejede</td>
+    <td>har ejet</td>
+    <td>havde ejet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to exist</td>
+    <td>at eksistere</td>
+    <td>eksisterer</td>
+    <td>eksisterede</td>
+    <td>har eksisteret</td>
+    <td>havde eksisteret</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to love</td>
+    <td>at elske</td>
+    <td>elsker</td>
+    <td>elskede</td>
+    <td>har elsket</td>
+    <td>havde elsket</td>
+    <td>elsk</td>
+  </tr>
+  <tr>
+    <td>to end</td>
+    <td>at ende</td>
+    <td>ender</td>
+    <td>endte</td>
+    <td>er endt</td>
+    <td>var endt</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to acknowledge</td>
+    <td>at erkende</td>
+    <td>erkender</td>
+    <td>erkendte</td>
+    <td>har erkendt</td>
+    <td>havde erkendt</td>
+    <td>erkend</td>
+  </tr>
+  <tr>
+    <td>to replace</td>
+    <td>at erstatte</td>
+    <td>erstatter</td>
+    <td>erstattede</td>
+    <td>har erstattet</td>
+    <td>havde erstatte</td>
+    <td>erstat</td>
+  </tr>
+  <tr>
+    <td>to fall</td>
+    <td>at falde</td>
+    <td>falder</td>
+    <td>faldt</td>
+    <td>er faldet</td>
+    <td>var faldet</td>
+    <td>fald</td>
+  </tr>
+  <tr>
+    <td>to catch</td>
+    <td>at fange</td>
+    <td>fanger</td>
+    <td>fangede</td>
+    <td>har fanget</td>
+    <td>havde fanget</td>
+    <td>fang</td>
+  </tr>
+  <tr>
+    <td>to maintain</td>
+    <td>at fastholde</td>
+    <td>fastholder</td>
+    <td>fastholdt</td>
+    <td>har fastholdt</td>
+    <td>havde fastholdt</td>
+    <td>fasthold</td>
+  </tr>
+  <tr>
+    <td>to determine</td>
+    <td>at fastslå</td>
+    <td>fastslår</td>
+    <td>fastslog</td>
+    <td>har fastslået</td>
+    <td>havde fastslået</td>
+    <td>slå fast</td>
+  </tr>
+  <tr>
+    <td>to fix</td>
+    <td>at fastsætte</td>
+    <td>fastsætter</td>
+    <td>fastsatte</td>
+    <td>har fastsat</td>
+    <td>havde fastsat</td>
+    <td>fastsæt</td>
+  </tr>
+  <tr>
+    <td>to get</td>
+    <td>at fatte</td>
+    <td>fatter</td>
+    <td>fattede</td>
+    <td>har fattet</td>
+    <td>havde fattet</td>
+    <td>fat</td>
+  </tr>
+  <tr>
+    <td>to celebrate</td>
+    <td>at fejre</td>
+    <td>fejrer</td>
+    <td>fejrede</td>
+    <td>har fejret</td>
+    <td>havde fejret</td>
+    <td>fejr</td>
+  </tr>
+  <tr>
+    <td>to find</td>
+    <td>at finde</td>
+    <td>finder</td>
+    <td>fandt</td>
+    <td>har fundet</td>
+    <td>havde fundet</td>
+    <td>find</td>
+  </tr>
+  <tr>
+    <td>to remove</td>
+    <td>at fjerne</td>
+    <td>fjerner</td>
+    <td>fjernede</td>
+    <td>har fjernet</td>
+    <td>havde fjernet</td>
+    <td>fjern</td>
+  </tr>
+  <tr>
+    <td>to escape</td>
+    <td>at flygte</td>
+    <td>flygter</td>
+    <td>flygtede</td>
+    <td>er flygtet</td>
+    <td>var flygtet</td>
+    <td>flygt</td>
+  </tr>
+  <tr>
+    <td>to move</td>
+    <td>at flytte</td>
+    <td>flytter</td>
+    <td>flyttede</td>
+    <td>er flyttet</td>
+    <td>var flyttet</td>
+    <td>flyt</td>
+  </tr>
+  <tr>
+    <td>to fly</td>
+    <td>at flyve</td>
+    <td>flyver</td>
+    <td>fløj</td>
+    <td>har / er fløjet</td>
+    <td>havde / var fløjet</td>
+    <td>flyv</td>
+  </tr>
+  <tr>
+    <td>to feed</td>
+    <td>at fodre</td>
+    <td>fodrer</td>
+    <td>fodrede</td>
+    <td>har fodret</td>
+    <td>havde fodret</td>
+    <td>fodr</td>
+  </tr>
+  <tr>
+    <td>to improve</td>
+    <td>at forbedre</td>
+    <td>forbedrer</td>
+    <td>forbedrede</td>
+    <td>har forbedret</td>
+    <td>havde forbedret</td>
+    <td>forbedr</td>
+  </tr>
+  <tr>
+    <td>to prepare</td>
+    <td>at forberede</td>
+    <td>forbereder</td>
+    <td>forberedte</td>
+    <td>har forberedt</td>
+    <td>havde forberedt</td>
+    <td>forbered</td>
+  </tr>
+  <tr>
+    <td>to connect</td>
+    <td>at forbinde</td>
+    <td>forbinder</td>
+    <td>forbandt</td>
+    <td>har forbundet</td>
+    <td>havde forfundet</td>
+    <td>forbind</td>
+  </tr>
+  <tr>
+    <td>to remain</td>
+    <td>at forblive</td>
+    <td>forbliver</td>
+    <td>forblev</td>
+    <td>er forblevet</td>
+    <td>var forblevet</td>
+    <td>forbliv</td>
+  </tr>
+  <tr>
+    <td>to allocate</td>
+    <td>at fordele</td>
+    <td>fordeler</td>
+    <td>fordelte</td>
+    <td>har fordelt</td>
+    <td>havde fordelt</td>
+    <td>fordel</td>
+  </tr>
+  <tr>
+    <td>to take place</td>
+    <td>at foregå</td>
+    <td>foregår</td>
+    <td>foregik</td>
+    <td>er foregået</td>
+    <td>var foregået</td>
+    <td>foregå</td>
+  </tr>
+  <tr>
+    <td>to occur</td>
+    <td>at forekomme</td>
+    <td>forekommer</td>
+    <td>forekom</td>
+    <td>er forekommet</td>
+    <td>var forekommet</td>
+    <td>forekom</td>
+  </tr>
+  <tr>
+    <td>to fall in love</td>
+    <td>at forelske sig</td>
+    <td>forelsker sig</td>
+    <td>forelskede sig</td>
+    <td>har forelsket sig</td>
+    <td>havde forelsket sig</td>
+    <td>forelsk dig</td>
+  </tr>
+  <tr>
+    <td>to unite</td>
+    <td>at forene</td>
+    <td>forener</td>
+    <td>forenede</td>
+    <td>har forenet</td>
+    <td>havde forenet</td>
+    <td>foren</td>
+  </tr>
+  <tr>
+    <td>to suggest</td>
+    <td>at foreslå</td>
+    <td>foreslår</td>
+    <td>foreslog</td>
+    <td>har foreslået</td>
+    <td>havde foreslået</td>
+    <td>foreslå</td>
+  </tr>
+  <tr>
+    <td>to imagine</td>
+    <td>at forestille sig</td>
+    <td>forestiller sig</td>
+    <td>forestillede sig</td>
+    <td>har forestillet sig</td>
+    <td>havde forestillet sig</td>
+    <td>forestil dig</td>
+  </tr>
+  <tr>
+    <td>to do</td>
+    <td>at foretage sig</td>
+    <td>foretager sig</td>
+    <td>foretog sig</td>
+    <td>har foretaget sig</td>
+    <td>havde foretaget sig</td>
+    <td>foretag dig</td>
+  </tr>
+  <tr>
+    <td>to prefer</td>
+    <td>at foretrække</td>
+    <td>foretrækker</td>
+    <td>foretrak</td>
+    <td>har foretrukket</td>
+    <td>havde foretrukket</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to negotiate</td>
+    <td>at forhandle</td>
+    <td>forhandler</td>
+    <td>forhandlede</td>
+    <td>har forhandlet</td>
+    <td>havde forhandlet</td>
+    <td>forhandl</td>
+  </tr>
+  <tr>
+    <td>to prevent</td>
+    <td>at forhindre</td>
+    <td>forhindrer</td>
+    <td>forhindrede</td>
+    <td>har forhindret</td>
+    <td>havde forhindret</td>
+    <td>forhindr</td>
+  </tr>
+  <tr>
+    <td>to relate to</td>
+    <td>at forholde sig</td>
+    <td>forholder sig</td>
+    <td>forholdt sig</td>
+    <td>har forholdt sig</td>
+    <td>havde forholdt sig</td>
+    <td>forhold dig</td>
+  </tr>
+  <tr>
+    <td>to explain</td>
+    <td>at forklare</td>
+    <td>forklarer</td>
+    <td>forklarede</td>
+    <td>har forklaret</td>
+    <td>havde forklaret</td>
+    <td>forklar</td>
+  </tr>
+  <tr>
+    <td>to leave</td>
+    <td>at forlade</td>
+    <td>forlader</td>
+    <td>forlod</td>
+    <td>har forladt</td>
+    <td>havde forladt</td>
+    <td>forlad</td>
+  </tr>
+  <tr>
+    <td>to demand</td>
+    <td>at forlange</td>
+    <td>forlanger</td>
+    <td>forlangte</td>
+    <td>har forlangt</td>
+    <td>havde forlangt</td>
+    <td>forlang</td>
+  </tr>
+  <tr>
+    <td>to formulate</td>
+    <td>at formulere</td>
+    <td>formulerer</td>
+    <td>formulerede</td>
+    <td>har formuleret</td>
+    <td>havde formuleret</td>
+    <td>formuler</td>
+  </tr>
+  <tr>
+    <td>to persuade</td>
+    <td>at formå</td>
+    <td>formår</td>
+    <td>formåede</td>
+    <td>har fomået</td>
+    <td>havde formået</td>
+    <td>formå</td>
+  </tr>
+  <tr>
+    <td>to delay</td>
+    <td>at forsinke</td>
+    <td>forsinker</td>
+    <td>forsinkede</td>
+    <td>har forsinket</td>
+    <td>havde forsinket</td>
+    <td>forsink</td>
+  </tr>
+  <tr>
+    <td>to understand</td>
+    <td>at forstå</td>
+    <td>forstår</td>
+    <td>forstod</td>
+    <td>har forstået</td>
+    <td>havde forstået</td>
+    <td>forstå</td>
+  </tr>
+  <tr>
+    <td>to defend</td>
+    <td>at forsvare</td>
+    <td>forsvarer</td>
+    <td>forsvarede</td>
+    <td>har forsvaret</td>
+    <td>havde forsvaret</td>
+    <td>forsvar</td>
+  </tr>
+  <tr>
+    <td>to disappear</td>
+    <td>at forsvinde</td>
+    <td>forsvinder</td>
+    <td>forsvandt</td>
+    <td>er forsvundet</td>
+    <td>var forsvundet</td>
+    <td>forsvind</td>
+  </tr>
+  <tr>
+    <td>to try</td>
+    <td>at forsøge</td>
+    <td>forsøger</td>
+    <td>forsøgte</td>
+    <td>har forsøgt</td>
+    <td>havde forsøgt</td>
+    <td>forsøg</td>
+  </tr>
+  <tr>
+    <td>to merit</td>
+    <td>at fortjene</td>
+    <td>fortjener</td>
+    <td>fortjente</td>
+    <td>har fortjent</td>
+    <td>havde fortjent</td>
+    <td>fortjen</td>
+  </tr>
+  <tr>
+    <td>to continue</td>
+    <td>at fortsætte</td>
+    <td>fortsætter</td>
+    <td>fortsatte</td>
+    <td>har / er fortsat</td>
+    <td>havde / var fortsat</td>
+    <td>fortsæt</td>
+  </tr>
+  <tr>
+    <td>to tell</td>
+    <td>at fortælle</td>
+    <td>fortæller</td>
+    <td>fortalte</td>
+    <td>har fortalt</td>
+    <td>havde fortalt</td>
+    <td>fortæl</td>
+  </tr>
+  <tr>
+    <td>to presuppose</td>
+    <td>at forudsætte</td>
+    <td>forudsætter</td>
+    <td>forudsatte</td>
+    <td>har / er forudsat</td>
+    <td>havde / var forudsat</td>
+    <td>forudsæt</td>
+  </tr>
+  <tr>
+    <td>to transform</td>
+    <td>at forvandle</td>
+    <td>forvandler</td>
+    <td>forvandlede</td>
+    <td>har forvandlet</td>
+    <td>havde forvandlet</td>
+    <td>forvandl</td>
+  </tr>
+  <tr>
+    <td>to expect</td>
+    <td>at forvente</td>
+    <td>forventer</td>
+    <td>forventede</td>
+    <td>har forventet</td>
+    <td>havde forventet</td>
+    <td>forvent</td>
+  </tr>
+  <tr>
+    <td>to be indicated in</td>
+    <td>at fremgå</td>
+    <td>fremgår</td>
+    <td>fremgik</td>
+    <td>er fremgået</td>
+    <td>var fremgået</td>
+    <td>fremgå</td>
+  </tr>
+  <tr>
+    <td>to stress</td>
+    <td>at fremhæve</td>
+    <td>fremhæver</td>
+    <td>fremhævede</td>
+    <td>har fremhævet</td>
+    <td>havde fremhævet</td>
+    <td>fremhæv</td>
+  </tr>
+  <tr>
+    <td>to present</td>
+    <td>at fremlægge</td>
+    <td>fremlægger</td>
+    <td>fremlagde</td>
+    <td>har fremlagt</td>
+    <td>havde fremlagt</td>
+    <td>fremlæg</td>
+  </tr>
+  <tr>
+    <td>to produce</td>
+    <td>at fremstille</td>
+    <td>fremstiller</td>
+    <td>fremstillede</td>
+    <td>har fremstillet</td>
+    <td>havde fremstillet</td>
+    <td>fremstil</td>
+  </tr>
+  <tr>
+    <td>to submit</td>
+    <td>at fremsætte</td>
+    <td>fremsætter</td>
+    <td>fremsatte</td>
+    <td>har fremsat</td>
+    <td>havde fremsat</td>
+    <td>fremsæt</td>
+  </tr>
+  <tr>
+    <td>to tempt</td>
+    <td>at friste</td>
+    <td>frister</td>
+    <td>fristede</td>
+    <td>har fristet</td>
+    <td>havde fristet</td>
+    <td>frist</td>
+  </tr>
+  <tr>
+    <td>to fear</td>
+    <td>at frygte</td>
+    <td>frygter</td>
+    <td>frygtede</td>
+    <td>har frygtet</td>
+    <td>havde frygtet</td>
+    <td>frygt</td>
+  </tr>
+  <tr>
+    <td>to function</td>
+    <td>at fungere</td>
+    <td>fungerer</td>
+    <td>fungerede</td>
+    <td>har fungeret</td>
+    <td>havde fungeret</td>
+    <td>funger</td>
+  </tr>
+  <tr>
+    <td>to fill</td>
+    <td>at fylde</td>
+    <td>fylder</td>
+    <td>fyldte</td>
+    <td>har fyldt</td>
+    <td>havde fyldt</td>
+    <td>fyld</td>
+  </tr>
+  <tr>
+    <td>to fire</td>
+    <td>at fyre</td>
+    <td>fyrer</td>
+    <td>fyrede</td>
+    <td>har fyret</td>
+    <td>havde fyret</td>
+    <td>fyr</td>
+  </tr>
+  <tr>
+    <td>to give birth</td>
+    <td>at føde</td>
+    <td>føder</td>
+    <td>fødte</td>
+    <td>har født</td>
+    <td>havde født</td>
+    <td>fød</td>
+  </tr>
+  <tr>
+    <td>to feel</td>
+    <td>at føle</td>
+    <td>føler</td>
+    <td>følte</td>
+    <td>har følt</td>
+    <td>havde følt</td>
+    <td>føl</td>
+  </tr>
+  <tr>
+    <td>to follow</td>
+    <td>at følge</td>
+    <td>følger</td>
+    <td>fulgte</td>
+    <td>har fulgt</td>
+    <td>havde fulgt</td>
+    <td>følg</td>
+  </tr>
+  <tr>
+    <td>to lead</td>
+    <td>at føre</td>
+    <td>fører</td>
+    <td>førte</td>
+    <td>har ført</td>
+    <td>havde ført</td>
+    <td>før</td>
+  </tr>
+  <tr>
+    <td>to get</td>
+    <td>at få</td>
+    <td>får</td>
+    <td>fik</td>
+    <td>har fået</td>
+    <td>havde fået</td>
+    <td>få</td>
+  </tr>
+  <tr>
+    <td>to save</td>
+    <td>at gemme</td>
+    <td>gemmer</td>
+    <td>gemte</td>
+    <td>har gemt</td>
+    <td>havde gemt</td>
+    <td>gem</td>
+  </tr>
+  <tr>
+    <td>to bother</td>
+    <td>at genere</td>
+    <td>generer</td>
+    <td>generede</td>
+    <td>har generet</td>
+    <td>havde generet</td>
+    <td>gener</td>
+  </tr>
+  <tr>
+    <td>to carry out</td>
+    <td>at gennemføre</td>
+    <td>gennemfører</td>
+    <td>gennemførte</td>
+    <td>har gennemført</td>
+    <td>havde gennemført</td>
+    <td>gennemfør</td>
+  </tr>
+  <tr>
+    <td>to go through</td>
+    <td>at gennemgå</td>
+    <td>gennemgår</td>
+    <td>gennemgik</td>
+    <td>har gennemgået</td>
+    <td>havde gennemgået</td>
+    <td>gennemgå</td>
+  </tr>
+  <tr>
+    <td>to repeat</td>
+    <td>at gentage</td>
+    <td>gentager</td>
+    <td>gentog</td>
+    <td>har gentaget</td>
+    <td>havde gentaget</td>
+    <td>gentag</td>
+  </tr>
+  <tr>
+    <td>to be bothered</td>
+    <td>at gide</td>
+    <td>gider</td>
+    <td>gad</td>
+    <td>har gidet</td>
+    <td>havde gidet</td>
+    <td>gid</td>
+  </tr>
+  <tr>
+    <td>to marry</td>
+    <td>at gifte sig</td>
+    <td>gifter sig</td>
+    <td>giftede sig</td>
+    <td>har giftet sig</td>
+    <td>havde giftet sig</td>
+    <td>gift dig</td>
+  </tr>
+  <tr>
+    <td>to give</td>
+    <td>at give</td>
+    <td>giver</td>
+    <td>gav</td>
+    <td>har givet</td>
+    <td>havde givet</td>
+    <td>giv</td>
+  </tr>
+  <tr>
+    <td>to forget</td>
+    <td>at glemme</td>
+    <td>glemmer</td>
+    <td>glemte</td>
+    <td>har glemt</td>
+    <td>havde glemt</td>
+    <td>glem</td>
+  </tr>
+  <tr>
+    <td>to glide</td>
+    <td>at glide</td>
+    <td>glider</td>
+    <td>gled</td>
+    <td>er gledet</td>
+    <td>var gledet</td>
+    <td>glid</td>
+  </tr>
+  <tr>
+    <td>to rejoice</td>
+    <td>at glæde sig</td>
+    <td>glæder sig</td>
+    <td>glædede sig</td>
+    <td>har glædet sig</td>
+    <td>havde glædet sig</td>
+    <td>glæd dig</td>
+  </tr>
+  <tr>
+    <td>to approve</td>
+    <td>at godkende</td>
+    <td>godkender</td>
+    <td>godkendte</td>
+    <td>har godkendt</td>
+    <td>havde godkendt</td>
+    <td>godkend</td>
+  </tr>
+  <tr>
+    <td>to catch</td>
+    <td>at gribe</td>
+    <td>griber</td>
+    <td>greb</td>
+    <td>har grebet</td>
+    <td>havde grebet</td>
+    <td>grib</td>
+  </tr>
+  <tr>
+    <td>to laugh</td>
+    <td>at grine</td>
+    <td>griner</td>
+    <td>grinede</td>
+    <td>har grinet</td>
+    <td>havde grinet</td>
+    <td>grin</td>
+  </tr>
+  <tr>
+    <td>to cry</td>
+    <td>at græde</td>
+    <td>græder</td>
+    <td>græd</td>
+    <td>har grædt</td>
+    <td>havde grædt</td>
+    <td>græd</td>
+  </tr>
+  <tr>
+    <td>to do</td>
+    <td>at gøre</td>
+    <td>gør</td>
+    <td>gjorde</td>
+    <td>har gjort</td>
+    <td>havde gjort</td>
+    <td>gør</td>
+  </tr>
+  <tr>
+    <td>to go</td>
+    <td>at gå</td>
+    <td>går</td>
+    <td>gik</td>
+    <td>har / er gået</td>
+    <td>havde / var gået</td>
+    <td>gå</td>
+  </tr>
+  <tr>
+    <td>to hate</td>
+    <td>at hade</td>
+    <td>hader</td>
+    <td>hadede</td>
+    <td>har hadet</td>
+    <td>havde hadet</td>
+    <td>had</td>
+  </tr>
+  <tr>
+    <td>to act</td>
+    <td>at handle</td>
+    <td>handler</td>
+    <td>handlede</td>
+    <td>har handlet</td>
+    <td>havde handlet</td>
+    <td>handl</td>
+  </tr>
+  <tr>
+    <td>to have</td>
+    <td>at have</td>
+    <td>har</td>
+    <td>havde</td>
+    <td>har haft</td>
+    <td>havde haft</td>
+    <td>hav</td>
+  </tr>
+  <tr>
+    <td>to be called</td>
+    <td>at hedde</td>
+    <td>hedder</td>
+    <td>hed</td>
+    <td>har heddet</td>
+    <td>havde heddet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to retrieve</td>
+    <td>at hente</td>
+    <td>henter</td>
+    <td>hentede</td>
+    <td>har hentet</td>
+    <td>havde hentet</td>
+    <td>hent</td>
+  </tr>
+  <tr>
+    <td>to approach</td>
+    <td>at henvende sig</td>
+    <td>henvender sig</td>
+    <td>henvendte sig</td>
+    <td>har henvendt sig</td>
+    <td>havde henvendt sig</td>
+    <td>henvend dig</td>
+  </tr>
+  <tr>
+    <td>to refer</td>
+    <td>at henvise</td>
+    <td>henviser</td>
+    <td>henviste</td>
+    <td>har henvist</td>
+    <td>havde henvist</td>
+    <td>henvis</td>
+  </tr>
+  <tr>
+    <td>to reign</td>
+    <td>at herske</td>
+    <td>hersker</td>
+    <td>herskede</td>
+    <td>har hersket</td>
+    <td>havde hersket</td>
+    <td>hersk</td>
+  </tr>
+  <tr>
+    <td>to greet</td>
+    <td>at hilse</td>
+    <td>hilser</td>
+    <td>hilste</td>
+    <td>har hilst</td>
+    <td>havde hilst</td>
+    <td>hils</td>
+  </tr>
+  <tr>
+    <td>to prevent</td>
+    <td>at hindre</td>
+    <td>hindrer</td>
+    <td>hindrede</td>
+    <td>har hindret</td>
+    <td>havde hindret</td>
+    <td>hindr</td>
+  </tr>
+  <tr>
+    <td>to help</td>
+    <td>at hjælpe</td>
+    <td>hjælper</td>
+    <td>hjalp</td>
+    <td>har hjulpet</td>
+    <td>havde hjulpet</td>
+    <td>hjælp</td>
+  </tr>
+  <tr>
+    <td>to hold</td>
+    <td>at holde</td>
+    <td>holder</td>
+    <td>holdt</td>
+    <td>har holdt</td>
+    <td>havde holdt</td>
+    <td>hold</td>
+  </tr>
+  <tr>
+    <td>to jump</td>
+    <td>at hoppe</td>
+    <td>hopper</td>
+    <td>hoppede</td>
+    <td>har / er hoppet</td>
+    <td>havde / var hoppet</td>
+    <td>hop</td>
+  </tr>
+  <tr>
+    <td>to remember</td>
+    <td>at huske</td>
+    <td>husker</td>
+    <td>huskede</td>
+    <td>har husket</td>
+    <td>havde husket</td>
+    <td>husk</td>
+  </tr>
+  <tr>
+    <td>to rest</td>
+    <td>at hvile sig</td>
+    <td>hviler sig</td>
+    <td>hvilede sig</td>
+    <td>har hvilet sig</td>
+    <td>havde hvilet sig</td>
+    <td>hvil dig</td>
+  </tr>
+  <tr>
+    <td>to whisper</td>
+    <td>at hviske</td>
+    <td>hvisker</td>
+    <td>hviskede</td>
+    <td>har hvisket</td>
+    <td>havde hvisket</td>
+    <td>hvisk</td>
+  </tr>
+  <tr>
+    <td>to pour</td>
+    <td>at hælde</td>
+    <td>hælder</td>
+    <td>hældte</td>
+    <td>har hældt</td>
+    <td>havde hældt</td>
+    <td>hæld</td>
+  </tr>
+  <tr>
+    <td>at lægge (tr)</td>
+    <td>at hænge (tr)</td>
+    <td>hænger</td>
+    <td>hængte</td>
+    <td>har hængt</td>
+    <td>havde hængt</td>
+    <td>hæng</td>
+  </tr>
+  <tr>
+    <td>to hang (intr)</td>
+    <td>at hænge (intr)</td>
+    <td>hænger</td>
+    <td>hang</td>
+    <td>har hængt</td>
+    <td>havde hængt</td>
+    <td>hæng</td>
+  </tr>
+  <tr>
+    <td>to claim</td>
+    <td>at hævde</td>
+    <td>hævder</td>
+    <td>hævdede</td>
+    <td>har hævdet</td>
+    <td>havde hævdet</td>
+    <td>hævd</td>
+  </tr>
+  <tr>
+    <td>to raise</td>
+    <td>at hæve</td>
+    <td>hæver</td>
+    <td>hævede</td>
+    <td>har hævet</td>
+    <td>havde hævet</td>
+    <td>hæv</td>
+  </tr>
+  <tr>
+    <td>to hear</td>
+    <td>at høre</td>
+    <td>hører</td>
+    <td>hørte</td>
+    <td>har hørt</td>
+    <td>havde hørt</td>
+    <td>hør</td>
+  </tr>
+  <tr>
+    <td>to hope</td>
+    <td>at håbe</td>
+    <td>håber</td>
+    <td>håbede</td>
+    <td>har håbet</td>
+    <td>havde håbet</td>
+    <td>håb</td>
+  </tr>
+  <tr>
+    <td>to involve</td>
+    <td>at inddrage</td>
+    <td>inddrager</td>
+    <td>inddrog</td>
+    <td>har inddraget</td>
+    <td>havde inddraget</td>
+    <td>inddrag</td>
+  </tr>
+  <tr>
+    <td>to imply</td>
+    <td>at indebære</td>
+    <td>indebærer</td>
+    <td>indebar</td>
+    <td>har indebåret</td>
+    <td>havde indebåret</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to contain</td>
+    <td>at indeholde</td>
+    <td>indeholder</td>
+    <td>indeholdt</td>
+    <td>har indeholdt</td>
+    <td>havde indeholdt</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to introduce</td>
+    <td>at indføre</td>
+    <td>indfører</td>
+    <td>indførte</td>
+    <td>har indført</td>
+    <td>havde indført</td>
+    <td>indfør</td>
+  </tr>
+  <tr>
+    <td>to conclude</td>
+    <td>at indgå</td>
+    <td>indgår</td>
+    <td>indgik</td>
+    <td>har indgået</td>
+    <td>havde indgået</td>
+    <td>indgå</td>
+  </tr>
+  <tr>
+    <td>to initiate</td>
+    <td>at indlede</td>
+    <td>indleder</td>
+    <td>indledte</td>
+    <td>har indledt</td>
+    <td>havde indledt</td>
+    <td>indled</td>
+  </tr>
+  <tr>
+    <td>to decorate</td>
+    <td>at indrette</td>
+    <td>indretter</td>
+    <td>indrettede</td>
+    <td>har indrettet</td>
+    <td>havde indrettet</td>
+    <td>indret</td>
+  </tr>
+  <tr>
+    <td>to admit</td>
+    <td>at indrømme</td>
+    <td>indrømmer</td>
+    <td>indrømmede</td>
+    <td>har indrømmet</td>
+    <td>havde indrømmet</td>
+    <td>indrøm</td>
+  </tr>
+  <tr>
+    <td>to set</td>
+    <td>at indstille</td>
+    <td>indstiller</td>
+    <td>indstillede</td>
+    <td>har indstillet</td>
+    <td>havde indstillet</td>
+    <td>indstil</td>
+  </tr>
+  <tr>
+    <td>to consume</td>
+    <td>at indtage</td>
+    <td>indtager</td>
+    <td>indtog</td>
+    <td>har indtaget</td>
+    <td>havde indtaget</td>
+    <td>indtag</td>
+  </tr>
+  <tr>
+    <td>to install</td>
+    <td>at installere</td>
+    <td>installerer</td>
+    <td>installerede</td>
+    <td>har installeret</td>
+    <td>havde installeret</td>
+    <td>installer</td>
+  </tr>
+  <tr>
+    <td>to inspire</td>
+    <td>at inspirere</td>
+    <td>inspirerer</td>
+    <td>inspirerede</td>
+    <td>har inspireret</td>
+    <td>havde inspireret</td>
+    <td>inspirer</td>
+  </tr>
+  <tr>
+    <td>to interest</td>
+    <td>at interessere</td>
+    <td>interesserer</td>
+    <td>interesserede</td>
+    <td>har interesseret</td>
+    <td>havde interesseret</td>
+    <td>interesser</td>
+  </tr>
+  <tr>
+    <td>to invest</td>
+    <td>at investere</td>
+    <td>investerer</td>
+    <td>investerede</td>
+    <td>har investeret</td>
+    <td>havde investeret</td>
+    <td>invester</td>
+  </tr>
+  <tr>
+    <td>to invite</td>
+    <td>at invitere</td>
+    <td>inviterer</td>
+    <td>inviterede</td>
+    <td>har inviteret</td>
+    <td>havde inviteret</td>
+    <td>inviter</td>
+  </tr>
+  <tr>
+    <td>to annoy</td>
+    <td>at irritere</td>
+    <td>irriterer</td>
+    <td>irriterede</td>
+    <td>har irriteret</td>
+    <td>havde irriteret</td>
+    <td>irriter</td>
+  </tr>
+  <tr>
+    <td>to call</td>
+    <td>at kalde</td>
+    <td>kalder</td>
+    <td>kaldte</td>
+    <td>har kaldt</td>
+    <td>havde kaldt</td>
+    <td>kald</td>
+  </tr>
+  <tr>
+    <td>to throw</td>
+    <td>at kaste</td>
+    <td>kaster</td>
+    <td>kastede</td>
+    <td>har kastet</td>
+    <td>havde kastet</td>
+    <td>kast</td>
+  </tr>
+  <tr>
+    <td>to know</td>
+    <td>at kende</td>
+    <td>kender</td>
+    <td>kendte</td>
+    <td>har kendt</td>
+    <td>havde kendt</td>
+    <td>kend</td>
+  </tr>
+  <tr>
+    <td>to look</td>
+    <td>at kigge</td>
+    <td>kigger</td>
+    <td>kiggede</td>
+    <td>har kigget</td>
+    <td>havde kigget</td>
+    <td>kig</td>
+  </tr>
+  <tr>
+    <td>to handle</td>
+    <td>at klare</td>
+    <td>klarer</td>
+    <td>klarede</td>
+    <td>har klaret</td>
+    <td>havde klaret</td>
+    <td>klar</td>
+  </tr>
+  <tr>
+    <td>to cut</td>
+    <td>at klippe</td>
+    <td>klipper</td>
+    <td>klippede</td>
+    <td>har klippet</td>
+    <td>havde klippet</td>
+    <td>klip</td>
+  </tr>
+  <tr>
+    <td>to dress</td>
+    <td>at klæde</td>
+    <td>klæder</td>
+    <td>klædte</td>
+    <td>har klædt</td>
+    <td>havde klædt</td>
+    <td>klæd</td>
+  </tr>
+  <tr>
+    <td>to crush</td>
+    <td>at knuse</td>
+    <td>knuser</td>
+    <td>knuste</td>
+    <td>har knust</td>
+    <td>havde knust</td>
+    <td>knus</td>
+  </tr>
+  <tr>
+    <td>to attach</td>
+    <td>at knytte</td>
+    <td>knytter</td>
+    <td>knyttede</td>
+    <td>har knyttet</td>
+    <td>havde knyttet</td>
+    <td>knyt</td>
+  </tr>
+  <tr>
+    <td>to boil</td>
+    <td>at koge</td>
+    <td>koger</td>
+    <td>kogte</td>
+    <td>har kogt</td>
+    <td>havde kogt</td>
+    <td>kog</td>
+  </tr>
+  <tr>
+    <td>to combine</td>
+    <td>at kombinere</td>
+    <td>kombinerer</td>
+    <td>kombinerede</td>
+    <td>har kombineret</td>
+    <td>havde kombineret</td>
+    <td>kombiner</td>
+  </tr>
+  <tr>
+    <td>to come</td>
+    <td>at komme</td>
+    <td>kommer</td>
+    <td>kom</td>
+    <td>er kommet</td>
+    <td>var kommet</td>
+    <td>kom</td>
+  </tr>
+  <tr>
+    <td>to comment</td>
+    <td>at kommentere</td>
+    <td>kommenterer</td>
+    <td>kommenterede</td>
+    <td>har kommenteret</td>
+    <td>havde kommenteret</td>
+    <td>kommenter</td>
+  </tr>
+  <tr>
+    <td>to concentrate</td>
+    <td>at koncentrere sig</td>
+    <td>koncentrerer sig</td>
+    <td>koncentrede sig</td>
+    <td>har koncentreret sig</td>
+    <td>havde koncentreret sig</td>
+    <td>koncentrer dig</td>
+  </tr>
+  <tr>
+    <td>to ascertain</td>
+    <td>at konstatere</td>
+    <td>konstaterer</td>
+    <td>konstaterede</td>
+    <td>har konstateret</td>
+    <td>havde konstateret</td>
+    <td>konstater</td>
+  </tr>
+  <tr>
+    <td>to contact</td>
+    <td>at kontakte</td>
+    <td>kontakter</td>
+    <td>kontaktede</td>
+    <td>har kontaktet</td>
+    <td>havde kontaktet</td>
+    <td>kontakt</td>
+  </tr>
+  <tr>
+    <td>to control</td>
+    <td>at kontrollere</td>
+    <td>kontrollerer</td>
+    <td>kontrollerede</td>
+    <td>har kontrolleret</td>
+    <td>havde kontrolleret</td>
+    <td>kontroller</td>
+  </tr>
+  <tr>
+    <td>to cost</td>
+    <td>at koste</td>
+    <td>koster</td>
+    <td>kostede</td>
+    <td>har kostet</td>
+    <td>havde kostet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to criticize</td>
+    <td>at kritisere</td>
+    <td>kritiserer</td>
+    <td>kritiserede</td>
+    <td>har kritiseret</td>
+    <td>havde kritiseret</td>
+    <td>kritiser</td>
+  </tr>
+  <tr>
+    <td>to demand</td>
+    <td>at kræve</td>
+    <td>kræver</td>
+    <td>krævede</td>
+    <td>har krævet</td>
+    <td>havde krævet</td>
+    <td>kræv</td>
+  </tr>
+  <tr>
+    <td>to be able to</td>
+    <td>at kunne</td>
+    <td>kan</td>
+    <td>kunne</td>
+    <td>har kunnet</td>
+    <td>havde kunnet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to like</td>
+    <td>at kunne lide</td>
+    <td>kan lide</td>
+    <td>kunne lide</td>
+    <td>har kunnet lide</td>
+    <td>havde kunnet lide</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to kiss</td>
+    <td>at kysse</td>
+    <td>kysser</td>
+    <td>kyssede</td>
+    <td>har kysset</td>
+    <td>havde kysset</td>
+    <td>kys</td>
+  </tr>
+  <tr>
+    <td>to fight</td>
+    <td>at kæmpe</td>
+    <td>kæmper</td>
+    <td>kæmpede</td>
+    <td>har kæmpet</td>
+    <td>havde kæmpet</td>
+    <td>kæmp</td>
+  </tr>
+  <tr>
+    <td>to buy</td>
+    <td>at købe</td>
+    <td>køber</td>
+    <td>købte</td>
+    <td>har købt</td>
+    <td>havde købt</td>
+    <td>køb</td>
+  </tr>
+  <tr>
+    <td>to drive</td>
+    <td>at køre</td>
+    <td>kører</td>
+    <td>kørte</td>
+    <td>har / er kørt</td>
+    <td>havde / var kørt</td>
+    <td>kør</td>
+  </tr>
+  <tr>
+    <td>to let</td>
+    <td>at lade</td>
+    <td>lader</td>
+    <td>lod</td>
+    <td>har ladet</td>
+    <td>havde ladet</td>
+    <td>lad</td>
+  </tr>
+  <tr>
+    <td>to pretend</td>
+    <td>at lade som om</td>
+    <td>lader som om</td>
+    <td>lod som om</td>
+    <td>har ladet som om</td>
+    <td>havde ladet som om</td>
+    <td>lad som om</td>
+  </tr>
+  <tr>
+    <td>to land</td>
+    <td>at lande</td>
+    <td>lander</td>
+    <td>landede</td>
+    <td>er landet</td>
+    <td>var landet</td>
+    <td>land</td>
+  </tr>
+  <tr>
+    <td>to make</td>
+    <td>at lave</td>
+    <td>laver</td>
+    <td>lavede</td>
+    <td>har lavet</td>
+    <td>havde lavet</td>
+    <td>lav</td>
+  </tr>
+  <tr>
+    <td>to laugh</td>
+    <td>at le</td>
+    <td>ler</td>
+    <td>lo</td>
+    <td>har leet</td>
+    <td>havde leet</td>
+    <td>le</td>
+  </tr>
+  <tr>
+    <td>to lead</td>
+    <td>at lede</td>
+    <td>leder</td>
+    <td>ledte</td>
+    <td>har ledt</td>
+    <td>havde ledt</td>
+    <td>led</td>
+  </tr>
+  <tr>
+    <td>to play</td>
+    <td>at lege</td>
+    <td>leger</td>
+    <td>legede</td>
+    <td>har leget</td>
+    <td>havde leget</td>
+    <td>leg</td>
+  </tr>
+  <tr>
+    <td>to rent</td>
+    <td>at leje</td>
+    <td>lejer</td>
+    <td>lejede</td>
+    <td>har lejet</td>
+    <td>havde lejet</td>
+    <td>lej</td>
+  </tr>
+  <tr>
+    <td>to ease</td>
+    <td>at lette</td>
+    <td>letter</td>
+    <td>lettede</td>
+    <td>har / er lettet</td>
+    <td>havde / er lettet</td>
+    <td>let</td>
+  </tr>
+  <tr>
+    <td>to live</td>
+    <td>at leve</td>
+    <td>lever</td>
+    <td>levede</td>
+    <td>har levet</td>
+    <td>havde levet</td>
+    <td>lev</td>
+  </tr>
+  <tr>
+    <td>to deliver</td>
+    <td>at levere</td>
+    <td>leverer</td>
+    <td>leverede</td>
+    <td>har leveret</td>
+    <td>havde leveret</td>
+    <td>lever</td>
+  </tr>
+  <tr>
+    <td>to suffer</td>
+    <td>at lide</td>
+    <td>lider</td>
+    <td>led</td>
+    <td>har lidt</td>
+    <td>havde lidt</td>
+    <td>lid</td>
+  </tr>
+  <tr>
+    <td>to lie (intr)</td>
+    <td>at ligge (intr)</td>
+    <td>ligger</td>
+    <td>lå</td>
+    <td>har ligget</td>
+    <td>havde ligget</td>
+    <td>lig</td>
+  </tr>
+  <tr>
+    <td>to look like</td>
+    <td>at ligne</td>
+    <td>ligner</td>
+    <td>lignede</td>
+    <td>har lignet</td>
+    <td>havde lignet</td>
+    <td>lign</td>
+  </tr>
+  <tr>
+    <td>to entice</td>
+    <td>at lokke</td>
+    <td>lokker</td>
+    <td>lokkede</td>
+    <td>har lokket</td>
+    <td>havde lokket</td>
+    <td>lok</td>
+  </tr>
+  <tr>
+    <td>to promise</td>
+    <td>at love</td>
+    <td>lover</td>
+    <td>lovede</td>
+    <td>har lovet</td>
+    <td>havde lovet</td>
+    <td>lov</td>
+  </tr>
+  <tr>
+    <td>to close</td>
+    <td>at lukke</td>
+    <td>lukker</td>
+    <td>lukkede</td>
+    <td>har lukket</td>
+    <td>havde lukket</td>
+    <td>luk</td>
+  </tr>
+  <tr>
+    <td>to sound</td>
+    <td>at lyde</td>
+    <td>lyder</td>
+    <td>lød</td>
+    <td>har lydt</td>
+    <td>havde lydt</td>
+    <td>lyd</td>
+  </tr>
+  <tr>
+    <td>to succeed</td>
+    <td>at lykkes</td>
+    <td>lykkes</td>
+    <td>lykkedes</td>
+    <td>er lykkedes</td>
+    <td>var lykkedes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to shine</td>
+    <td>at lyse</td>
+    <td>lyser</td>
+    <td>lyste</td>
+    <td>har lyst</td>
+    <td>havde lyst</td>
+    <td>lys</td>
+  </tr>
+  <tr>
+    <td>to listen</td>
+    <td>at lytte</td>
+    <td>lytter</td>
+    <td>lyttede</td>
+    <td>har lyttet</td>
+    <td>havde lyttet</td>
+    <td>lyt</td>
+  </tr>
+  <tr>
+    <td>to put (tr)</td>
+    <td>at lægge (tr.)</td>
+    <td>lægger</td>
+    <td>lagde</td>
+    <td>har lagt</td>
+    <td>havde lagt</td>
+    <td>læg</td>
+  </tr>
+  <tr>
+    <td>to learn</td>
+    <td>at lære</td>
+    <td>lærer</td>
+    <td>lærte</td>
+    <td>har lært</td>
+    <td>havde lært</td>
+    <td>lær</td>
+  </tr>
+  <tr>
+    <td>to read</td>
+    <td>at læse</td>
+    <td>læser</td>
+    <td>læste</td>
+    <td>har læst</td>
+    <td>havde læst</td>
+    <td>læs</td>
+  </tr>
+  <tr>
+    <td>to run</td>
+    <td>at løbe</td>
+    <td>løber</td>
+    <td>løb</td>
+    <td>har / er  løbet</td>
+    <td>havde / var løbet</td>
+    <td>løb</td>
+  </tr>
+  <tr>
+    <td>to lift</td>
+    <td>at løfte</td>
+    <td>løfter</td>
+    <td>løftede</td>
+    <td>har løftet</td>
+    <td>havde løftet</td>
+    <td>løft</td>
+  </tr>
+  <tr>
+    <td>to solve</td>
+    <td>at løse</td>
+    <td>løser</td>
+    <td>løste</td>
+    <td>har løst</td>
+    <td>havde løst</td>
+    <td>løs</td>
+  </tr>
+  <tr>
+    <td>to borrow</td>
+    <td>at låne</td>
+    <td>låner</td>
+    <td>lånte</td>
+    <td>har lånt</td>
+    <td>havde lånt</td>
+    <td>lån</td>
+  </tr>
+  <tr>
+    <td>to measure</td>
+    <td>at male</td>
+    <td>maler</td>
+    <td>malede</td>
+    <td>har malet</td>
+    <td>havde malet</td>
+    <td>mal</td>
+  </tr>
+  <tr>
+    <td>to miss</td>
+    <td>at mangle</td>
+    <td>mangler</td>
+    <td>manglede</td>
+    <td>har manglet</td>
+    <td>havde manglet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to inform</td>
+    <td>at meddele</td>
+    <td>meddeler</td>
+    <td>meddelte</td>
+    <td>har meddelt</td>
+    <td>havde meddelt</td>
+    <td>meddel</td>
+  </tr>
+  <tr>
+    <td>to lead</td>
+    <td>at medføre</td>
+    <td>medfører</td>
+    <td>medførte</td>
+    <td>har medført</td>
+    <td>havde medført</td>
+    <td>medfør</td>
+  </tr>
+  <tr>
+    <td>to contribute</td>
+    <td>at medvirke</td>
+    <td>medvirker</td>
+    <td>medvirkede</td>
+    <td>har medvirket</td>
+    <td>havde medvirket</td>
+    <td>medvirk</td>
+  </tr>
+  <tr>
+    <td>to sign</td>
+    <td>at melde</td>
+    <td>melder</td>
+    <td>meldte</td>
+    <td>har meldt</td>
+    <td>havde meldt</td>
+    <td>meld</td>
+  </tr>
+  <tr>
+    <td>to mean</td>
+    <td>at mene</td>
+    <td>mener</td>
+    <td>mente</td>
+    <td>har ment</td>
+    <td>havde ment</td>
+    <td>men</td>
+  </tr>
+  <tr>
+    <td>to remind</td>
+    <td>at minde</td>
+    <td>minder</td>
+    <td>mindede</td>
+    <td>har mindet</td>
+    <td>havde mindet</td>
+    <td>mind</td>
+  </tr>
+  <tr>
+    <td>to lose</td>
+    <td>at miste</td>
+    <td>mister</td>
+    <td>mistede</td>
+    <td>har mistet</td>
+    <td>havde mistet</td>
+    <td>mist</td>
+  </tr>
+  <tr>
+    <td>to receive</td>
+    <td>at modtage</td>
+    <td>modtager</td>
+    <td>modtog</td>
+    <td>har modtaget</td>
+    <td>havde modtaget</td>
+    <td>modtag</td>
+  </tr>
+  <tr>
+    <td>to murder</td>
+    <td>at myrde</td>
+    <td>myrder</td>
+    <td>myrdede</td>
+    <td>har myrdet</td>
+    <td>havde myrdet</td>
+    <td>myrd</td>
+  </tr>
+  <tr>
+    <td>to brand</td>
+    <td>at mærke</td>
+    <td>mærker</td>
+    <td>mærkede</td>
+    <td>har mærket</td>
+    <td>havde mærket</td>
+    <td>mærk</td>
+  </tr>
+  <tr>
+    <td>to meet</td>
+    <td>at møde</td>
+    <td>møder</td>
+    <td>mødte</td>
+    <td>har mødt</td>
+    <td>havde mødt</td>
+    <td>mød</td>
+  </tr>
+  <tr>
+    <td>to meet</td>
+    <td>at mødes</td>
+    <td>mødes</td>
+    <td>mødtes</td>
+    <td>har mødtes</td>
+    <td>havde mødtes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to measure</td>
+    <td>at måle</td>
+    <td>måler</td>
+    <td>målte</td>
+    <td>har målt</td>
+    <td>havde målt</td>
+    <td>mål</td>
+  </tr>
+  <tr>
+    <td>to that had</td>
+    <td>at måtte</td>
+    <td>må</td>
+    <td>måtte</td>
+    <td>har måttet</td>
+    <td>havde måttet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to close</td>
+    <td>at nedlægge</td>
+    <td>nedlægger</td>
+    <td>nedlagde</td>
+    <td>har nedlagt</td>
+    <td>havde nedlagt</td>
+    <td>nedlæg</td>
+  </tr>
+  <tr>
+    <td>to reduce</td>
+    <td>at nedsætte</td>
+    <td>nedsætter</td>
+    <td>nedsatte</td>
+    <td>har nedsat</td>
+    <td>havde nedsat</td>
+    <td>nedsæt</td>
+  </tr>
+  <tr>
+    <td>to nod</td>
+    <td>at nikke</td>
+    <td>nikker</td>
+    <td>nikkede</td>
+    <td>har nikket</td>
+    <td>havde nikket</td>
+    <td>nik</td>
+  </tr>
+  <tr>
+    <td>to note</td>
+    <td>at notere</td>
+    <td>noterer</td>
+    <td>noterede</td>
+    <td>har noteret</td>
+    <td>havde noteret</td>
+    <td>noter</td>
+  </tr>
+  <tr>
+    <td>to enjoy</td>
+    <td>at nyde</td>
+    <td>nyder</td>
+    <td>nød</td>
+    <td>har nydt</td>
+    <td>havde nydt</td>
+    <td>nyd</td>
+  </tr>
+  <tr>
+    <td>to refuse</td>
+    <td>at nægte</td>
+    <td>nægter</td>
+    <td>nægtede</td>
+    <td>har nægtet</td>
+    <td>havde nægtet</td>
+    <td>nægt</td>
+  </tr>
+  <tr>
+    <td>to approach</td>
+    <td>at nærme sig</td>
+    <td>nærmer sig</td>
+    <td>nærmede sig</td>
+    <td>har nærmet sig</td>
+    <td>havde nærmet sig</td>
+    <td>nærm dig</td>
+  </tr>
+  <tr>
+    <td>to settle for</td>
+    <td>at nøjes med</td>
+    <td>nøjes med</td>
+    <td>nøjedes med</td>
+    <td>har nøjedes</td>
+    <td>havde nøjedes med</td>
+    <td>nøjes med</td>
+  </tr>
+  <tr>
+    <td>to reach</td>
+    <td>at nå</td>
+    <td>når</td>
+    <td>nåede</td>
+    <td>har nået</td>
+    <td>havde nået</td>
+    <td>nå</td>
+  </tr>
+  <tr>
+    <td>to publish</td>
+    <td>at offentliggøre</td>
+    <td>offentliggør</td>
+    <td>offentlig-gjorde</td>
+    <td>har offentlig-gjort</td>
+    <td>havde offentlig-gjort</td>
+    <td>offentlig-gør</td>
+  </tr>
+  <tr>
+    <td>to include</td>
+    <td>at omfatte</td>
+    <td>omfatter</td>
+    <td>omfattede</td>
+    <td>har omfattet</td>
+    <td>havde omfattet</td>
+    <td>omfat</td>
+  </tr>
+  <tr>
+    <td>to surround</td>
+    <td>at omgive</td>
+    <td>omgiver</td>
+    <td>omgav</td>
+    <td>har omgivet</td>
+    <td>havde omgivet</td>
+    <td>omgiv</td>
+  </tr>
+  <tr>
+    <td>to build up</td>
+    <td>at opbygge</td>
+    <td>opbygger</td>
+    <td>opbyggede</td>
+    <td>har opbygget</td>
+    <td>havde opbygget</td>
+    <td>opbyg</td>
+  </tr>
+  <tr>
+    <td>to discover</td>
+    <td>at opdage</td>
+    <td>opdager</td>
+    <td>opdagede</td>
+    <td>har opdaget</td>
+    <td>havde opdaget</td>
+    <td>opdag</td>
+  </tr>
+  <tr>
+    <td>to operate</td>
+    <td>at operere</td>
+    <td>opererer</td>
+    <td>opererede</td>
+    <td>har opereret</td>
+    <td>havde opereret</td>
+    <td>operer</td>
+  </tr>
+  <tr>
+    <td>to perceive</td>
+    <td>at opfatte</td>
+    <td>opfatter</td>
+    <td>opfattede</td>
+    <td>har opfattet</td>
+    <td>havde opfattet</td>
+    <td>opfat</td>
+  </tr>
+  <tr>
+    <td>to invent</td>
+    <td>at opfinde</td>
+    <td>opfinder</td>
+    <td>opfandt</td>
+    <td>har opfundet</td>
+    <td>havde opfundet</td>
+    <td>opfind</td>
+  </tr>
+  <tr>
+    <td>to encourage</td>
+    <td>at opfordre</td>
+    <td>opfordrer</td>
+    <td>opfordrede</td>
+    <td>har opfordret</td>
+    <td>havde opfordret</td>
+    <td>opfordr</td>
+  </tr>
+  <tr>
+    <td>to fulfill</td>
+    <td>at opfylde</td>
+    <td>opfylder</td>
+    <td>opfyldte</td>
+    <td>har opfyldt</td>
+    <td>havde opfyldt</td>
+    <td>opfyld</td>
+  </tr>
+  <tr>
+    <td>to behave</td>
+    <td>at opføre</td>
+    <td>opfører</td>
+    <td>opførte</td>
+    <td>har opført</td>
+    <td>havde opført</td>
+    <td>opfør</td>
+  </tr>
+  <tr>
+    <td>to give up</td>
+    <td>at opgive</td>
+    <td>opgiver</td>
+    <td>opgav</td>
+    <td>har opgivet</td>
+    <td>havde opgivet</td>
+    <td>opgiv</td>
+  </tr>
+  <tr>
+    <td>to cancel</td>
+    <td>at ophæve</td>
+    <td>ophæver</td>
+    <td>ophævede</td>
+    <td>har ophævet</td>
+    <td>havde ophævet</td>
+    <td>ophæv</td>
+  </tr>
+  <tr>
+    <td>to experience</td>
+    <td>at opleve</td>
+    <td>oplever</td>
+    <td>oplevede</td>
+    <td>har oplevet</td>
+    <td>havde oplevet</td>
+    <td>oplev</td>
+  </tr>
+  <tr>
+    <td>to inform</td>
+    <td>at oplyse</td>
+    <td>oplyser</td>
+    <td>oplyste</td>
+    <td>har oplyst</td>
+    <td>havde oplyst</td>
+    <td>oplys</td>
+  </tr>
+  <tr>
+    <td>to obtain</td>
+    <td>at opnå</td>
+    <td>opnår</td>
+    <td>opnåede</td>
+    <td>har opnået</td>
+    <td>havde opnået</td>
+    <td>opnå</td>
+  </tr>
+  <tr>
+    <td>to create</td>
+    <td>at oprette</td>
+    <td>opretter</td>
+    <td>oprettede</td>
+    <td>har oprettet</td>
+    <td>havde oprettet</td>
+    <td>opret</td>
+  </tr>
+  <tr>
+    <td>to establish</td>
+    <td>at opstille</td>
+    <td>opstiller</td>
+    <td>opstillede</td>
+    <td>har opstillet</td>
+    <td>havde opstillet</td>
+    <td>opstil</td>
+  </tr>
+  <tr>
+    <td>to occur</td>
+    <td>at opstå</td>
+    <td>opstår</td>
+    <td>opstod</td>
+    <td>er opstået</td>
+    <td>var opstået</td>
+    <td>opstå</td>
+  </tr>
+  <tr>
+    <td>to record</td>
+    <td>at optage</td>
+    <td>optager</td>
+    <td>optog</td>
+    <td>har optaget</td>
+    <td>havde optaget</td>
+    <td>optag</td>
+  </tr>
+  <tr>
+    <td>to perform</td>
+    <td>at optræde</td>
+    <td>optræder</td>
+    <td>optrådte</td>
+    <td>har optrådt</td>
+    <td>havde optrådt</td>
+    <td>optræd</td>
+  </tr>
+  <tr>
+    <td>to orient</td>
+    <td>at orientere</td>
+    <td>orienterer</td>
+    <td>orienterede</td>
+    <td>har orienteret</td>
+    <td>havde orienteret</td>
+    <td>orienter</td>
+  </tr>
+  <tr>
+    <td>to convince</td>
+    <td>at overbevise</td>
+    <td>overbeviser</td>
+    <td>overbeviste</td>
+    <td>har overbevist</td>
+    <td>havde overbevist</td>
+    <td>overbevis</td>
+  </tr>
+  <tr>
+    <td>to transfer</td>
+    <td>at overføre</td>
+    <td>overfører</td>
+    <td>overførte</td>
+    <td>har overført</td>
+    <td>havde overført</td>
+    <td>overfør</td>
+  </tr>
+  <tr>
+    <td>to adhere to</td>
+    <td>at overholde</td>
+    <td>overholder</td>
+    <td>overholdt</td>
+    <td>har overholdt</td>
+    <td>havde overholdt</td>
+    <td>overhold</td>
+  </tr>
+  <tr>
+    <td>to leave</td>
+    <td>at overlade</td>
+    <td>overlader</td>
+    <td>overlod</td>
+    <td>har overladt</td>
+    <td>havde overladt</td>
+    <td>overlad</td>
+  </tr>
+  <tr>
+    <td>to survive</td>
+    <td>at overleve</td>
+    <td>overlever</td>
+    <td>overlevede</td>
+    <td>har overlevet</td>
+    <td>havde overlevet</td>
+    <td>overlev</td>
+  </tr>
+  <tr>
+    <td>to surprise</td>
+    <td>at overraske</td>
+    <td>overrasker</td>
+    <td>overraskede</td>
+    <td>har overrasket</td>
+    <td>havde overrasket</td>
+    <td>overrask</td>
+  </tr>
+  <tr>
+    <td>to take over</td>
+    <td>at overtage</td>
+    <td>overtager</td>
+    <td>overtog</td>
+    <td>har overtaget</td>
+    <td>havde overtaget</td>
+    <td>overtag</td>
+  </tr>
+  <tr>
+    <td>to consider</td>
+    <td>at overveje</td>
+    <td>overvejer</td>
+    <td>overvejede</td>
+    <td>har overvejet</td>
+    <td>havde overvejet</td>
+    <td>overvej</td>
+  </tr>
+  <tr>
+    <td>to pack</td>
+    <td>at pakke</td>
+    <td>pakker</td>
+    <td>pakkede</td>
+    <td>har pakket</td>
+    <td>havde pakket</td>
+    <td>pak</td>
+  </tr>
+  <tr>
+    <td>to take care</td>
+    <td>at passe</td>
+    <td>passer</td>
+    <td>passede</td>
+    <td>har passet</td>
+    <td>havde passet</td>
+    <td>pas</td>
+  </tr>
+  <tr>
+    <td>to point</td>
+    <td>at pege</td>
+    <td>peger</td>
+    <td>pegede</td>
+    <td>har peget</td>
+    <td>havde peget</td>
+    <td>peg</td>
+  </tr>
+  <tr>
+    <td>to position</td>
+    <td>at placere</td>
+    <td>placerer</td>
+    <td>placerede</td>
+    <td>har placeret</td>
+    <td>havde placeret</td>
+    <td>placer</td>
+  </tr>
+  <tr>
+    <td>to plan</td>
+    <td>at planlægge</td>
+    <td>planlægger</td>
+    <td>planlagde</td>
+    <td>har planlagt</td>
+    <td>havde planlagt</td>
+    <td>planlæg</td>
+  </tr>
+  <tr>
+    <td>to care</td>
+    <td>at pleje</td>
+    <td>plejer</td>
+    <td>plejede</td>
+    <td>har plejet</td>
+    <td>havde plejet</td>
+    <td>plej</td>
+  </tr>
+  <tr>
+    <td>to press</td>
+    <td>at presse</td>
+    <td>presser</td>
+    <td>pressede</td>
+    <td>har presset</td>
+    <td>havde presset</td>
+    <td>pres</td>
+  </tr>
+  <tr>
+    <td>to produce</td>
+    <td>at producere</td>
+    <td>producerer</td>
+    <td>producerede</td>
+    <td>har produceret</td>
+    <td>havde produceret</td>
+    <td>producer</td>
+  </tr>
+  <tr>
+    <td>to shape</td>
+    <td>at præge</td>
+    <td>præger</td>
+    <td>prægede</td>
+    <td>har præget</td>
+    <td>havde præget</td>
+    <td>præg</td>
+  </tr>
+  <tr>
+    <td>to present</td>
+    <td>at præsentere</td>
+    <td>præsenterer</td>
+    <td>præsenterede</td>
+    <td>har præsenteret</td>
+    <td>havde præsenteret</td>
+    <td>præsenter</td>
+  </tr>
+  <tr>
+    <td>to try</td>
+    <td>at prøve</td>
+    <td>prøver</td>
+    <td>prøvede</td>
+    <td>har prøvet</td>
+    <td>havde prøvet</td>
+    <td>prøv</td>
+  </tr>
+  <tr>
+    <td>to polish</td>
+    <td>at pudse</td>
+    <td>pudser</td>
+    <td>pudsede</td>
+    <td>har pudset</td>
+    <td>havde pudset</td>
+    <td>puds</td>
+  </tr>
+  <tr>
+    <td>to affect</td>
+    <td>at påvirke</td>
+    <td>påvirker</td>
+    <td>påvirkede</td>
+    <td>har påvirket</td>
+    <td>havde påvirket</td>
+    <td>påvirk</td>
+  </tr>
+  <tr>
+    <td>to hit</td>
+    <td>at ramme</td>
+    <td>rammer</td>
+    <td>ramte</td>
+    <td>har ramt</td>
+    <td>havde ramt</td>
+    <td>ram</td>
+  </tr>
+  <tr>
+    <td>to react</td>
+    <td>at reagere</td>
+    <td>reagerer</td>
+    <td>reagerede</td>
+    <td>har reageret</td>
+    <td>havde reageret</td>
+    <td>reager</td>
+  </tr>
+  <tr>
+    <td>to save</td>
+    <td>at redde</td>
+    <td>redder</td>
+    <td>reddede</td>
+    <td>har reddet</td>
+    <td>havde reddet</td>
+    <td>red</td>
+  </tr>
+  <tr>
+    <td>to reduce</td>
+    <td>at reducere</td>
+    <td>reducerer</td>
+    <td>reducerede</td>
+    <td>har reduceret</td>
+    <td>havde reduceret</td>
+    <td>reducer</td>
+  </tr>
+  <tr>
+    <td>to register</td>
+    <td>at registrere</td>
+    <td>registrerer</td>
+    <td>registrerede</td>
+    <td>har registreret</td>
+    <td>havde registreret</td>
+    <td>registrer</td>
+  </tr>
+  <tr>
+    <td>to calculate</td>
+    <td>at regne</td>
+    <td>regner</td>
+    <td>regnede</td>
+    <td>har regnet</td>
+    <td>havde regnet</td>
+    <td>regn</td>
+  </tr>
+  <tr>
+    <td>to travel</td>
+    <td>at rejse</td>
+    <td>rejser</td>
+    <td>rejste</td>
+    <td>har / er rejst</td>
+    <td>havde / var rejst</td>
+    <td>rejs</td>
+  </tr>
+  <tr>
+    <td>to clean</td>
+    <td>at rense</td>
+    <td>renser</td>
+    <td>rensede</td>
+    <td>har renset</td>
+    <td>havde renset</td>
+    <td>rens</td>
+  </tr>
+  <tr>
+    <td>to represent</td>
+    <td>at repræsentere</td>
+    <td>repræsen-terer</td>
+    <td>repræsen-terede</td>
+    <td>har repræsen-teret</td>
+    <td>havde repræsen-teret</td>
+    <td>repræsen-ter</td>
+  </tr>
+  <tr>
+    <td>to respect</td>
+    <td>at respektere</td>
+    <td>respekterer</td>
+    <td>respekterede</td>
+    <td>har respekteret</td>
+    <td>havde respekteret</td>
+    <td>respekter</td>
+  </tr>
+  <tr>
+    <td>to correct</td>
+    <td>at rette</td>
+    <td>retter</td>
+    <td>rettede</td>
+    <td>har rettet</td>
+    <td>havde rettet</td>
+    <td>ret</td>
+  </tr>
+  <tr>
+    <td>to ride</td>
+    <td>at ride</td>
+    <td>rider</td>
+    <td>red</td>
+    <td>har redet</td>
+    <td>havde redet</td>
+    <td>rid</td>
+  </tr>
+  <tr>
+    <td>to call</td>
+    <td>at ringe</td>
+    <td>ringer</td>
+    <td>ringede</td>
+    <td>har ringet</td>
+    <td>havde ringet</td>
+    <td>ring</td>
+  </tr>
+  <tr>
+    <td>to risk</td>
+    <td>at risikere</td>
+    <td>risikerer</td>
+    <td>risikerede</td>
+    <td>har risikeret</td>
+    <td>havde risikeret</td>
+    <td>risiker</td>
+  </tr>
+  <tr>
+    <td>to tear</td>
+    <td>at rive</td>
+    <td>river</td>
+    <td>rev</td>
+    <td>har revet</td>
+    <td>havde revet</td>
+    <td>riv</td>
+  </tr>
+  <tr>
+    <td>to praise</td>
+    <td>at rose</td>
+    <td>roser</td>
+    <td>roste</td>
+    <td>har rost</td>
+    <td>havde rost</td>
+    <td>ros</td>
+  </tr>
+  <tr>
+    <td>to roll</td>
+    <td>at rulle</td>
+    <td>ruller</td>
+    <td>rullede</td>
+    <td>har / er rullet</td>
+    <td>havde / var rullet</td>
+    <td>rul</td>
+  </tr>
+  <tr>
+    <td>to accommodate</td>
+    <td>at rumme</td>
+    <td>rummer</td>
+    <td>rummede</td>
+    <td>har rummet</td>
+    <td>havde rummet</td>
+    <td>rum</td>
+  </tr>
+  <tr>
+    <td>to clear</td>
+    <td>at rydde</td>
+    <td>rydder</td>
+    <td>ryddede</td>
+    <td>har ryddet</td>
+    <td>havde ryddet</td>
+    <td>ryd</td>
+  </tr>
+  <tr>
+    <td>to smoke</td>
+    <td>at ryge</td>
+    <td>ryger</td>
+    <td>røg</td>
+    <td>har røget</td>
+    <td>havde røget</td>
+    <td>ryg</td>
+  </tr>
+  <tr>
+    <td>to move</td>
+    <td>at rykke</td>
+    <td>rykker</td>
+    <td>rykkede</td>
+    <td>har rykket</td>
+    <td>havde rykket</td>
+    <td>ryk</td>
+  </tr>
+  <tr>
+    <td>to shake</td>
+    <td>at ryste</td>
+    <td>ryster</td>
+    <td>rystede</td>
+    <td>har rystet</td>
+    <td>havde rystet</td>
+    <td>ryst</td>
+  </tr>
+  <tr>
+    <td>to reach</td>
+    <td>at række</td>
+    <td>rækker</td>
+    <td>rakte</td>
+    <td>har rakt</td>
+    <td>havde rakt</td>
+    <td>ræk</td>
+  </tr>
+  <tr>
+    <td>to touch</td>
+    <td>at røre</td>
+    <td>rører</td>
+    <td>rørte</td>
+    <td>har rørt</td>
+    <td>havde rørt</td>
+    <td>rør</td>
+  </tr>
+  <tr>
+    <td>to yell</td>
+    <td>at råbe</td>
+    <td>råber</td>
+    <td>råbte</td>
+    <td>har råbt</td>
+    <td>havde råbt</td>
+    <td>råb</td>
+  </tr>
+  <tr>
+    <td>to advise</td>
+    <td>at råde</td>
+    <td>råder</td>
+    <td>rådede</td>
+    <td>har rådet</td>
+    <td>havde rådet</td>
+    <td>råd</td>
+  </tr>
+  <tr>
+    <td>to collect</td>
+    <td>at samle</td>
+    <td>samler</td>
+    <td>samlede</td>
+    <td>har samlet</td>
+    <td>havde samlet</td>
+    <td>saml</td>
+  </tr>
+  <tr>
+    <td>to compare</td>
+    <td>at sammenligne</td>
+    <td>sammen-ligner</td>
+    <td>sammen-lignede</td>
+    <td>har sammen-lignet</td>
+    <td>havde sammen-lignet</td>
+    <td>sammen-lign</td>
+  </tr>
+  <tr>
+    <td>to gamble</td>
+    <td>at satse</td>
+    <td>satser</td>
+    <td>satsede</td>
+    <td>har satset</td>
+    <td>havde satset</td>
+    <td>sats</td>
+  </tr>
+  <tr>
+    <td>to miss</td>
+    <td>at savne</td>
+    <td>savner</td>
+    <td>savnede</td>
+    <td>har savnet</td>
+    <td>havde savnet</td>
+    <td>savn</td>
+  </tr>
+  <tr>
+    <td>to see</td>
+    <td>at se</td>
+    <td>ser</td>
+    <td>så</td>
+    <td>har set</td>
+    <td>havde set</td>
+    <td>se</td>
+  </tr>
+  <tr>
+    <td>to sail</td>
+    <td>at sejle</td>
+    <td>sejler</td>
+    <td>sejlede</td>
+    <td>har sejlet</td>
+    <td>havde sejlet</td>
+    <td>sejl</td>
+  </tr>
+  <tr>
+    <td>to send</td>
+    <td>at sende</td>
+    <td>sender</td>
+    <td>sendte</td>
+    <td>har sendt</td>
+    <td>havde sendt</td>
+    <td>send</td>
+  </tr>
+  <tr>
+    <td>to serve</td>
+    <td>at servere</td>
+    <td>serverer</td>
+    <td>serverede</td>
+    <td>har serveret</td>
+    <td>havde serveret</td>
+    <td>server</td>
+  </tr>
+  <tr>
+    <td>to be seen</td>
+    <td>at ses</td>
+    <td>ses</td>
+    <td>sås</td>
+    <td>har sets</td>
+    <td>havde sets</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to sit</td>
+    <td>at sidde</td>
+    <td>sidder</td>
+    <td>sad</td>
+    <td>har siddet</td>
+    <td>havde siddet</td>
+    <td>sid</td>
+  </tr>
+  <tr>
+    <td>to say</td>
+    <td>at sige</td>
+    <td>siger</td>
+    <td>sagde</td>
+    <td>har sagt</td>
+    <td>havde sagt</td>
+    <td>sig</td>
+  </tr>
+  <tr>
+    <td>to ensure</td>
+    <td>at sikre</td>
+    <td>sikrer</td>
+    <td>sikrede</td>
+    <td>har sikret</td>
+    <td>havde sikret</td>
+    <td>sikr</td>
+  </tr>
+  <tr>
+    <td>to create</td>
+    <td>at skabe</td>
+    <td>skaber</td>
+    <td>skabte</td>
+    <td>har skabt</td>
+    <td>havde skabt</td>
+    <td>skab</td>
+  </tr>
+  <tr>
+    <td>to hurt</td>
+    <td>at skade</td>
+    <td>skader</td>
+    <td>skadede</td>
+    <td>har skadet</td>
+    <td>havde skadet</td>
+    <td>skad</td>
+  </tr>
+  <tr>
+    <td>to obtain</td>
+    <td>at skaffe</td>
+    <td>skaffer</td>
+    <td>skaffede</td>
+    <td>har skaffet</td>
+    <td>havde skaffet</td>
+    <td>skaf</td>
+  </tr>
+  <tr>
+    <td>to happen</td>
+    <td>at ske</td>
+    <td>sker</td>
+    <td>skete</td>
+    <td>er sket</td>
+    <td>var sket</td>
+    <td>ske</td>
+  </tr>
+  <tr>
+    <td>to switch</td>
+    <td>at skifte</td>
+    <td>skifter</td>
+    <td>skiftede</td>
+    <td>har skiftet</td>
+    <td>havde skiftet</td>
+    <td>skift</td>
+  </tr>
+  <tr>
+    <td>to shine</td>
+    <td>at skinne</td>
+    <td>skinner</td>
+    <td>skinnede</td>
+    <td>har skinnet</td>
+    <td>havde skinnet</td>
+    <td>skin</td>
+  </tr>
+  <tr>
+    <td>to hide</td>
+    <td>at skjule</td>
+    <td>skjuler</td>
+    <td>skjulte</td>
+    <td>har skjult</td>
+    <td>havde skjult</td>
+    <td>skjul</td>
+  </tr>
+  <tr>
+    <td>to scream</td>
+    <td>at skrige</td>
+    <td>skriger</td>
+    <td>skreg</td>
+    <td>har skreget</td>
+    <td>havde skreget</td>
+    <td>skrig</td>
+  </tr>
+  <tr>
+    <td>to write</td>
+    <td>at skrive</td>
+    <td>skriver</td>
+    <td>skrev</td>
+    <td>har skrevet</td>
+    <td>havde skrevet</td>
+    <td>skriv</td>
+  </tr>
+  <tr>
+    <td>to intimidate</td>
+    <td>at skræmme</td>
+    <td>skræmmer</td>
+    <td>skræmte</td>
+    <td>har skræmt</td>
+    <td>havde skræmt</td>
+    <td>skræm</td>
+  </tr>
+  <tr>
+    <td>to push</td>
+    <td>at skubbe</td>
+    <td>skubber</td>
+    <td>skubbede</td>
+    <td>har skubbet</td>
+    <td>havde skubbet</td>
+    <td>skub</td>
+  </tr>
+  <tr>
+    <td>to disappoint</td>
+    <td>at skuffe</td>
+    <td>skuffer</td>
+    <td>skuffede</td>
+    <td>har skuffet</td>
+    <td>havde skuffet</td>
+    <td>skuf</td>
+  </tr>
+  <tr>
+    <td>to have to</td>
+    <td>at skulle</td>
+    <td>skal</td>
+    <td>skulle</td>
+    <td>har skullet</td>
+    <td>havde skullet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to shoot</td>
+    <td>at skyde</td>
+    <td>skyder</td>
+    <td>skød</td>
+    <td>har skudt</td>
+    <td>havde skudt</td>
+    <td>skyd</td>
+  </tr>
+  <tr>
+    <td>to be due</td>
+    <td>at skyldes</td>
+    <td>skyldes</td>
+    <td>skyldtes</td>
+    <td>har skyldtes</td>
+    <td>havde skyldtes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to cut</td>
+    <td>at skære</td>
+    <td>skærer</td>
+    <td>skar</td>
+    <td>har skåret</td>
+    <td>havde skåret</td>
+    <td>skær</td>
+  </tr>
+  <tr>
+    <td>to let go</td>
+    <td>at slippe</td>
+    <td>slipper</td>
+    <td>slap</td>
+    <td>har / er sluppet</td>
+    <td>havde / var sluppet</td>
+    <td>slip</td>
+  </tr>
+  <tr>
+    <td>to turn off</td>
+    <td>at slukke</td>
+    <td>slukker</td>
+    <td>slukkede</td>
+    <td>er slukket</td>
+    <td>var slukket</td>
+    <td>sluk</td>
+  </tr>
+  <tr>
+    <td>to end</td>
+    <td>at slutte</td>
+    <td>slutter</td>
+    <td>sluttede</td>
+    <td>er sluttet</td>
+    <td>var sluttet</td>
+    <td>slut</td>
+  </tr>
+  <tr>
+    <td>to hit</td>
+    <td>at slå</td>
+    <td>slår</td>
+    <td>slog</td>
+    <td>har slået</td>
+    <td>havde slået</td>
+    <td>slå</td>
+  </tr>
+  <tr>
+    <td>to fight</td>
+    <td>at slås</td>
+    <td>slås</td>
+    <td>sloges</td>
+    <td>har sloges</td>
+    <td>havde sloges</td>
+    <td>slås</td>
+  </tr>
+  <tr>
+    <td>to taste</td>
+    <td>at smage</td>
+    <td>smager</td>
+    <td>smagte</td>
+    <td>har smagt</td>
+    <td>havde smagt</td>
+    <td>smag</td>
+  </tr>
+  <tr>
+    <td>to throw</td>
+    <td>at smide</td>
+    <td>smider</td>
+    <td>smed</td>
+    <td>har smidt</td>
+    <td>havde smidt</td>
+    <td>smid</td>
+  </tr>
+  <tr>
+    <td>to smile</td>
+    <td>at smile</td>
+    <td>smiler</td>
+    <td>smilede</td>
+    <td>har smilet</td>
+    <td>havde smilet</td>
+    <td>smil</td>
+  </tr>
+  <tr>
+    <td>to infect</td>
+    <td>at smitte</td>
+    <td>smitter</td>
+    <td>smittede</td>
+    <td>har smittet</td>
+    <td>havde smittet</td>
+    <td>smit</td>
+  </tr>
+  <tr>
+    <td>to talk</td>
+    <td>at snakke</td>
+    <td>snakker</td>
+    <td>snakkede</td>
+    <td>har snakket</td>
+    <td>havde snakket</td>
+    <td>snak</td>
+  </tr>
+  <tr>
+    <td>to sleep</td>
+    <td>at sove</td>
+    <td>sover</td>
+    <td>sov</td>
+    <td>har sovet</td>
+    <td>havde sovet</td>
+    <td>sov</td>
+  </tr>
+  <tr>
+    <td>to save</td>
+    <td>at spare</td>
+    <td>sparer</td>
+    <td>sparede</td>
+    <td>har sparet</td>
+    <td>havde sparet</td>
+    <td>spar</td>
+  </tr>
+  <tr>
+    <td>to play</td>
+    <td>at spille</td>
+    <td>spiller</td>
+    <td>spillede</td>
+    <td>har spillet</td>
+    <td>havde spillet</td>
+    <td>spil</td>
+  </tr>
+  <tr>
+    <td>to eat</td>
+    <td>at spise</td>
+    <td>spiser</td>
+    <td>spiste</td>
+    <td>har spist</td>
+    <td>havde spist</td>
+    <td>spis</td>
+  </tr>
+  <tr>
+    <td>to spread</td>
+    <td>at sprede</td>
+    <td>spreder</td>
+    <td>spredte</td>
+    <td>har spredt</td>
+    <td>havde spredt</td>
+    <td>spred</td>
+  </tr>
+  <tr>
+    <td>to jump</td>
+    <td>at springe</td>
+    <td>springer</td>
+    <td>sprang</td>
+    <td>har / er sprunget</td>
+    <td>havde / var sprunget</td>
+    <td>spring</td>
+  </tr>
+  <tr>
+    <td>to ask</td>
+    <td>at spørge</td>
+    <td>spørger</td>
+    <td>spurgte</td>
+    <td>har spurgt</td>
+    <td>havde spurgt</td>
+    <td>spørg</td>
+  </tr>
+  <tr>
+    <td>to stutter</td>
+    <td>at stamme</td>
+    <td>stammer</td>
+    <td>stammede</td>
+    <td>har stammet</td>
+    <td>havde stammet</td>
+    <td>stam</td>
+  </tr>
+  <tr>
+    <td>to stop</td>
+    <td>at standse</td>
+    <td>standser</td>
+    <td>standsede</td>
+    <td>har / er standset</td>
+    <td>havde / var standset</td>
+    <td>stands</td>
+  </tr>
+  <tr>
+    <td>to start</td>
+    <td>at starte</td>
+    <td>starter</td>
+    <td>startede</td>
+    <td>har / er startet</td>
+    <td>havde / var startet</td>
+    <td>start</td>
+  </tr>
+  <tr>
+    <td>to vote</td>
+    <td>at stemme</td>
+    <td>stemmer</td>
+    <td>stemte</td>
+    <td>har stemt</td>
+    <td>havde stemt</td>
+    <td>stem</td>
+  </tr>
+  <tr>
+    <td>to fry</td>
+    <td>at stege</td>
+    <td>steger</td>
+    <td>stegte</td>
+    <td>har stegt</td>
+    <td>havde stegt</td>
+    <td>steg</td>
+  </tr>
+  <tr>
+    <td>to increase</td>
+    <td>at stige</td>
+    <td>stiger</td>
+    <td>steg</td>
+    <td>er steget</td>
+    <td>var steget</td>
+    <td>stig</td>
+  </tr>
+  <tr>
+    <td>to stab</td>
+    <td>at stikke</td>
+    <td>stikker</td>
+    <td>stak</td>
+    <td>har stukket</td>
+    <td>havde stukket</td>
+    <td>stik</td>
+  </tr>
+  <tr>
+    <td>to run off</td>
+    <td>at stikke af</td>
+    <td>stikker af</td>
+    <td>stak af</td>
+    <td>er stukket af</td>
+    <td>var stukket af</td>
+    <td>stik af</td>
+  </tr>
+  <tr>
+    <td>to place</td>
+    <td>at stille</td>
+    <td>stiller</td>
+    <td>stillede</td>
+    <td>har stillet</td>
+    <td>havde stillet</td>
+    <td>stil</td>
+  </tr>
+  <tr>
+    <td>to steal</td>
+    <td>at stjæle</td>
+    <td>stjæler</td>
+    <td>stjal</td>
+    <td>har stjålet</td>
+    <td>havde stjålet</td>
+    <td>stjæl</td>
+  </tr>
+  <tr>
+    <td>to trust</td>
+    <td>at stole på</td>
+    <td>stoler på</td>
+    <td>stolede på</td>
+    <td>har stolet på</td>
+    <td>havde stolet på</td>
+    <td>stol på</td>
+  </tr>
+  <tr>
+    <td>to stop</td>
+    <td>at stoppe</td>
+    <td>stopper</td>
+    <td>stoppede</td>
+    <td>har / er stoppet</td>
+    <td>havde / var stoppet</td>
+    <td>stop</td>
+  </tr>
+  <tr>
+    <td>to punish</td>
+    <td>at straffe</td>
+    <td>straffer</td>
+    <td>straffede</td>
+    <td>har straffet</td>
+    <td>havde straffet</td>
+    <td>straf</td>
+  </tr>
+  <tr>
+    <td>to tighten</td>
+    <td>at stramme</td>
+    <td>strammer</td>
+    <td>strammede</td>
+    <td>har strammet</td>
+    <td>havde strammet</td>
+    <td>stram</td>
+  </tr>
+  <tr>
+    <td>to stretch</td>
+    <td>at strække</td>
+    <td>strækker</td>
+    <td>strakte</td>
+    <td>har strakt</td>
+    <td>havde strakt</td>
+    <td>stræk</td>
+  </tr>
+  <tr>
+    <td>to study</td>
+    <td>at studere</td>
+    <td>studerer</td>
+    <td>studerede</td>
+    <td>har studeret</td>
+    <td>havde studeret</td>
+    <td>studer</td>
+  </tr>
+  <tr>
+    <td>to control</td>
+    <td>at styre</td>
+    <td>styrer</td>
+    <td>styrede</td>
+    <td>har styret</td>
+    <td>havde styret</td>
+    <td>styr</td>
+  </tr>
+  <tr>
+    <td>to strengthen</td>
+    <td>at styrke</td>
+    <td>styrker</td>
+    <td>styrkede</td>
+    <td>har styrket</td>
+    <td>havde styrket</td>
+    <td>styrk</td>
+  </tr>
+  <tr>
+    <td>to bump</td>
+    <td>at støde</td>
+    <td>støder</td>
+    <td>stødte</td>
+    <td>har stødt</td>
+    <td>havde stødt</td>
+    <td>stød</td>
+  </tr>
+  <tr>
+    <td>to encounter</td>
+    <td>at støde på</td>
+    <td>støder på</td>
+    <td>stødte på</td>
+    <td>er stødt på</td>
+    <td>var stødt på</td>
+    <td>stød på</td>
+  </tr>
+  <tr>
+    <td>to support</td>
+    <td>at støtte</td>
+    <td>støtter</td>
+    <td>støttede</td>
+    <td>har støttet</td>
+    <td>havde støttet</td>
+    <td>støt</td>
+  </tr>
+  <tr>
+    <td>to stand</td>
+    <td>at stå</td>
+    <td>står</td>
+    <td>stod</td>
+    <td>har stået</td>
+    <td>havde stået</td>
+    <td>stå</td>
+  </tr>
+  <tr>
+    <td>to get up</td>
+    <td>at stå op</td>
+    <td>står op</td>
+    <td>stod op</td>
+    <td>er stået op</td>
+    <td>var stået op</td>
+    <td>stå op</td>
+  </tr>
+  <tr>
+    <td>to answer</td>
+    <td>at svare</td>
+    <td>svarer</td>
+    <td>svarede</td>
+    <td>har svaret</td>
+    <td>havde svaret</td>
+    <td>svar</td>
+  </tr>
+  <tr>
+    <td>to let down</td>
+    <td>at svigte</td>
+    <td>svigter</td>
+    <td>svigtede</td>
+    <td>har sviget</td>
+    <td>havde svigtet</td>
+    <td>svigt</td>
+  </tr>
+  <tr>
+    <td>to swing</td>
+    <td>at svinge</td>
+    <td>svinger</td>
+    <td>svingede</td>
+    <td>har svinget</td>
+    <td>havde svinget</td>
+    <td>sving</td>
+  </tr>
+  <tr>
+    <td>to sew</td>
+    <td>at sy</td>
+    <td>syr</td>
+    <td>syede</td>
+    <td>har syet</td>
+    <td>havde syet</td>
+    <td>sy</td>
+  </tr>
+  <tr>
+    <td>to think</td>
+    <td>at synes</td>
+    <td>synes</td>
+    <td>syntes</td>
+    <td>har syntes</td>
+    <td>havde syntes</td>
+    <td>synes</td>
+  </tr>
+  <tr>
+    <td>to sing</td>
+    <td>at synge</td>
+    <td>synger</td>
+    <td>sang</td>
+    <td>har sunget</td>
+    <td>havde sunget</td>
+    <td>syng</td>
+  </tr>
+  <tr>
+    <td>to swallow</td>
+    <td>at synke</td>
+    <td>synker</td>
+    <td>sank</td>
+    <td>er sunket</td>
+    <td>var sunket</td>
+    <td>synk</td>
+  </tr>
+  <tr>
+    <td>to sell</td>
+    <td>at sælge</td>
+    <td>sælger</td>
+    <td>solgte</td>
+    <td>har solgt</td>
+    <td>havde solgt</td>
+    <td>sælg</td>
+  </tr>
+  <tr>
+    <td>to sink</td>
+    <td>at sænke</td>
+    <td>sænker</td>
+    <td>sænkede</td>
+    <td>har sænket</td>
+    <td>havde sænket</td>
+    <td>sænk</td>
+  </tr>
+  <tr>
+    <td>to put</td>
+    <td>at sætte</td>
+    <td>sætter</td>
+    <td>satte</td>
+    <td>har sat</td>
+    <td>havde sat</td>
+    <td>sæt</td>
+  </tr>
+  <tr>
+    <td>to search</td>
+    <td>at søge</td>
+    <td>søger</td>
+    <td>søgte</td>
+    <td>har søgt</td>
+    <td>havde søgt</td>
+    <td>søg</td>
+  </tr>
+  <tr>
+    <td>to provide</td>
+    <td>at sørge for</td>
+    <td>sørger for</td>
+    <td>sørgede for</td>
+    <td>har sørget for</td>
+    <td>havde sørget for</td>
+    <td>sørg for</td>
+  </tr>
+  <tr>
+    <td>to lose</td>
+    <td>at tabe</td>
+    <td>taber</td>
+    <td>tabte</td>
+    <td>har tabt</td>
+    <td>havde tabt</td>
+    <td>tab</td>
+  </tr>
+  <tr>
+    <td>to take</td>
+    <td>at tage</td>
+    <td>tager</td>
+    <td>tog</td>
+    <td>har taget</td>
+    <td>havde taget</td>
+    <td>tag</td>
+  </tr>
+  <tr>
+    <td>to go home</td>
+    <td>at tage hjem</td>
+    <td>tager hjem</td>
+    <td>tog hjem</td>
+    <td>er taget hjem</td>
+    <td>var taget hjem</td>
+    <td>tag hjem</td>
+  </tr>
+  <tr>
+    <td>to thank</td>
+    <td>at takke</td>
+    <td>takker</td>
+    <td>takkede</td>
+    <td>har takket</td>
+    <td>havde takket</td>
+    <td>tak</td>
+  </tr>
+  <tr>
+    <td>to speak</td>
+    <td>at tale</td>
+    <td>taler</td>
+    <td>talte</td>
+    <td>har talt</td>
+    <td>havde talt</td>
+    <td>tal</td>
+  </tr>
+  <tr>
+    <td>to draw</td>
+    <td>at tegne</td>
+    <td>tegner</td>
+    <td>tegnede</td>
+    <td>har tegnet</td>
+    <td>havde tegnet</td>
+    <td>tegn</td>
+  </tr>
+  <tr>
+    <td>to spend</td>
+    <td>at tilbringe</td>
+    <td>tilbringer</td>
+    <td>tilbragte</td>
+    <td>har tilbragt</td>
+    <td>havde tilbragt</td>
+    <td>tilbring</td>
+  </tr>
+  <tr>
+    <td>to offer</td>
+    <td>at tilbyde</td>
+    <td>tilbyder</td>
+    <td>tilbød</td>
+    <td>har tilbudt</td>
+    <td>havde tilbudt</td>
+    <td>tilbyd</td>
+  </tr>
+  <tr>
+    <td>to add</td>
+    <td>at tilføje</td>
+    <td>tilføjer</td>
+    <td>tilføjede</td>
+    <td>har tilføjet</td>
+    <td>havde tilføjet</td>
+    <td>tilføj</td>
+  </tr>
+  <tr>
+    <td>to belong</td>
+    <td>at tilhøre</td>
+    <td>tilhører</td>
+    <td>tilhørte</td>
+    <td>har tilhørt</td>
+    <td>havde tilhørt</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to permit</td>
+    <td>at tillade</td>
+    <td>tillader</td>
+    <td>tillod</td>
+    <td>har tilladt</td>
+    <td>havde tilladt</td>
+    <td>tillad</td>
+  </tr>
+  <tr>
+    <td>to serve</td>
+    <td>at tjene</td>
+    <td>tjener</td>
+    <td>tjente</td>
+    <td>har tjent</td>
+    <td>havde tjent</td>
+    <td>tjen</td>
+  </tr>
+  <tr>
+    <td>to believe</td>
+    <td>at tro</td>
+    <td>tror</td>
+    <td>troede</td>
+    <td>har troet</td>
+    <td>havde troet</td>
+    <td>tro</td>
+  </tr>
+  <tr>
+    <td>to threaten</td>
+    <td>at true</td>
+    <td>truer</td>
+    <td>truede</td>
+    <td>har truet</td>
+    <td>havde truet</td>
+    <td>tru</td>
+  </tr>
+  <tr>
+    <td>to push</td>
+    <td>at trykke</td>
+    <td>trykker</td>
+    <td>trykkede</td>
+    <td>har trykket</td>
+    <td>havde trykket</td>
+    <td>tryk</td>
+  </tr>
+  <tr>
+    <td>to step</td>
+    <td>at træde</td>
+    <td>træder</td>
+    <td>trådte</td>
+    <td>har trådt</td>
+    <td>havde trådt</td>
+    <td>træd</td>
+  </tr>
+  <tr>
+    <td>to meet</td>
+    <td>at træffe</td>
+    <td>træffer</td>
+    <td>traf</td>
+    <td>har truffet</td>
+    <td>havde truffet</td>
+    <td>træf</td>
+  </tr>
+  <tr>
+    <td>to pull</td>
+    <td>at trække</td>
+    <td>trækker</td>
+    <td>trak</td>
+    <td>har trukket</td>
+    <td>havde trukket</td>
+    <td>træk</td>
+  </tr>
+  <tr>
+    <td>to need</td>
+    <td>at trænge</td>
+    <td>trænger</td>
+    <td>trængte</td>
+    <td>har trængt</td>
+    <td>havde trængt</td>
+    <td>træng</td>
+  </tr>
+  <tr>
+    <td>to penetrate</td>
+    <td>at trænge ind</td>
+    <td>trænger ind</td>
+    <td>trængte ind</td>
+    <td>er trængt ind</td>
+    <td>var trængt ind</td>
+    <td>træng ind</td>
+  </tr>
+  <tr>
+    <td>to dare</td>
+    <td>at turde</td>
+    <td>tør</td>
+    <td>turde</td>
+    <td>har turdet</td>
+    <td>havde turdet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to force</td>
+    <td>at tvinge</td>
+    <td>tvinger</td>
+    <td>tvang</td>
+    <td>har tvunget</td>
+    <td>havde tvunget</td>
+    <td>tving</td>
+  </tr>
+  <tr>
+    <td>to decipher</td>
+    <td>at tyde</td>
+    <td>tyder</td>
+    <td>tydede</td>
+    <td>har tydet</td>
+    <td>havde tydet</td>
+    <td>tyd</td>
+  </tr>
+  <tr>
+    <td>to count</td>
+    <td>at tælle</td>
+    <td>tæller</td>
+    <td>talte</td>
+    <td>har talt</td>
+    <td>havde talt</td>
+    <td>tæl</td>
+  </tr>
+  <tr>
+    <td>to turn on</td>
+    <td>at tænde</td>
+    <td>tænder</td>
+    <td>tændte</td>
+    <td>har tændt</td>
+    <td>havde tændt</td>
+    <td>tænd</td>
+  </tr>
+  <tr>
+    <td>to think</td>
+    <td>at tænke</td>
+    <td>tænker</td>
+    <td>tænkte</td>
+    <td>har tænkt</td>
+    <td>havde tænkt</td>
+    <td>tænk</td>
+  </tr>
+  <tr>
+    <td>to empty</td>
+    <td>at tømme</td>
+    <td>tømmer</td>
+    <td>tømte</td>
+    <td>har tømt</td>
+    <td>havde tømt</td>
+    <td>tøm</td>
+  </tr>
+  <tr>
+    <td>to dry</td>
+    <td>at tørre</td>
+    <td>tørrer</td>
+    <td>tørrede</td>
+    <td>har tørret</td>
+    <td>havde tørret</td>
+    <td>tør</td>
+  </tr>
+  <tr>
+    <td>to tolerate</td>
+    <td>at tåle</td>
+    <td>tåler</td>
+    <td>tålte</td>
+    <td>har tålt</td>
+    <td>havde tålt</td>
+    <td>tål</td>
+  </tr>
+  <tr>
+    <td>to draw</td>
+    <td>at udarbejde</td>
+    <td>udarbejder</td>
+    <td>udarbejdede</td>
+    <td>har udarbejdet</td>
+    <td>havde udarbejdet</td>
+    <td>udarbejd</td>
+  </tr>
+  <tr>
+    <td>to spread</td>
+    <td>at udbrede</td>
+    <td>udbreder</td>
+    <td>udbredte</td>
+    <td>har udbredt</td>
+    <td>havde udbredt</td>
+    <td>udbred</td>
+  </tr>
+  <tr>
+    <td>to educate</td>
+    <td>at uddanne</td>
+    <td>uddanner</td>
+    <td>uddannede</td>
+    <td>har uddannet</td>
+    <td>havde uddannet</td>
+    <td>uddan</td>
+  </tr>
+  <tr>
+    <td>to exclude</td>
+    <td>at udelukke</td>
+    <td>udelukker</td>
+    <td>udelukkede</td>
+    <td>har udelukket</td>
+    <td>havde udelukket</td>
+    <td>udeluk</td>
+  </tr>
+  <tr>
+    <td>to carry out</td>
+    <td>at udføre</td>
+    <td>udfører</td>
+    <td>udførte</td>
+    <td>har udført</td>
+    <td>havde udført</td>
+    <td>udfør</td>
+  </tr>
+  <tr>
+    <td>to publish</td>
+    <td>at udgive</td>
+    <td>udgiver</td>
+    <td>udgav</td>
+    <td>har udgivet</td>
+    <td>havde udgivet</td>
+    <td>udgiv</td>
+  </tr>
+  <tr>
+    <td>to constitute</td>
+    <td>at udgøre</td>
+    <td>udgør</td>
+    <td>udgjorde</td>
+    <td>har udgjort</td>
+    <td>havde udgjort</td>
+    <td>udgør</td>
+  </tr>
+  <tr>
+    <td>to appear</td>
+    <td>at udkomme</td>
+    <td>udkommer</td>
+    <td>udkom</td>
+    <td>er udkommet</td>
+    <td>var udkommet</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>to extradite</td>
+    <td>at udlevere</td>
+    <td>udleverer</td>
+    <td>udleverede</td>
+    <td>har udleveret</td>
+    <td>havde udleveret</td>
+    <td>udlever</td>
+  </tr>
+  <tr>
+    <td>to trigger</td>
+    <td>at udløse</td>
+    <td>udløser</td>
+    <td>udløste</td>
+    <td>har udløst</td>
+    <td>havde udløst</td>
+    <td>udløs</td>
+  </tr>
+  <tr>
+    <td>to exploit</td>
+    <td>at udnytte</td>
+    <td>udnytter</td>
+    <td>udnyttede</td>
+    <td>har udnyttet</td>
+    <td>havde udnyttet</td>
+    <td>udnyt</td>
+  </tr>
+  <tr>
+    <td>to equip</td>
+    <td>at udstyre</td>
+    <td>udstyrer</td>
+    <td>udstyrede</td>
+    <td>har udstyret</td>
+    <td>havde udstyret</td>
+    <td>udstyr</td>
+  </tr>
+  <tr>
+    <td>to postpone</td>
+    <td>at udsætte</td>
+    <td>udsætter</td>
+    <td>udsatte</td>
+    <td>har udsat</td>
+    <td>havde udsat</td>
+    <td>udsæt</td>
+  </tr>
+  <tr>
+    <td>to comment</td>
+    <td>at udtale</td>
+    <td>udtaler</td>
+    <td>udtalte</td>
+    <td>har udtalt</td>
+    <td>havde udtalt</td>
+    <td>udtal</td>
+  </tr>
+  <tr>
+    <td>to express</td>
+    <td>at udtrykke</td>
+    <td>udtrykker</td>
+    <td>udtrykte</td>
+    <td>har udtrykt</td>
+    <td>havde udtrykt</td>
+    <td>udtryk</td>
+  </tr>
+  <tr>
+    <td>to expand</td>
+    <td>at udvide</td>
+    <td>udvider</td>
+    <td>uvidede</td>
+    <td>har udvidet</td>
+    <td>havde udvidet</td>
+    <td>udvid</td>
+  </tr>
+  <tr>
+    <td>to develop</td>
+    <td>at udvikle</td>
+    <td>udvikler</td>
+    <td>udviklede</td>
+    <td>har udviklet</td>
+    <td>havde udviklet</td>
+    <td>udvikl</td>
+  </tr>
+  <tr>
+    <td>to entertain</td>
+    <td>at underholde</td>
+    <td>underholder</td>
+    <td>underholdt</td>
+    <td>har underholdt</td>
+    <td>havde underholdt</td>
+    <td>underhold</td>
+  </tr>
+  <tr>
+    <td>to emphasize</td>
+    <td>at understrege</td>
+    <td>under-streger</td>
+    <td>under-stregede</td>
+    <td>har under-streget</td>
+    <td>havde under-streget</td>
+    <td>under-streg</td>
+  </tr>
+  <tr>
+    <td>to research</td>
+    <td>at undersøge</td>
+    <td>undersøger</td>
+    <td>undersøgte</td>
+    <td>har undersøgt</td>
+    <td>havde undersøgt</td>
+    <td>undersøg</td>
+  </tr>
+  <tr>
+    <td>to avoid</td>
+    <td>at undgå</td>
+    <td>undgår</td>
+    <td>undgik</td>
+    <td>har undgået</td>
+    <td>havde undgået</td>
+    <td>undgå</td>
+  </tr>
+  <tr>
+    <td>to wonder</td>
+    <td>at undre sig</td>
+    <td>undrer sig</td>
+    <td>undrede sig</td>
+    <td>har undret sig</td>
+    <td>havde undret sig</td>
+    <td>undr dig</td>
+  </tr>
+  <tr>
+    <td>to vaccinate</td>
+    <td>at vaccinere</td>
+    <td>vaccinerer</td>
+    <td>vaccinerede</td>
+    <td>har vaccineret</td>
+    <td>havde vaccineret</td>
+    <td>vacciner</td>
+  </tr>
+  <tr>
+    <td>to perform</td>
+    <td>at vare</td>
+    <td>varer</td>
+    <td>varede</td>
+    <td>har varet</td>
+    <td>havde varet</td>
+    <td>var</td>
+  </tr>
+  <tr>
+    <td>to vary</td>
+    <td>at variere</td>
+    <td>varierer</td>
+    <td>varierede</td>
+    <td>har varieret</td>
+    <td>havde varieret</td>
+    <td>varier</td>
+  </tr>
+  <tr>
+    <td>to wash</td>
+    <td>at vaske</td>
+    <td>vasker</td>
+    <td>vaskede</td>
+    <td>har vasket</td>
+    <td>havde vasket</td>
+    <td>vask</td>
+  </tr>
+  <tr>
+    <td>to adopt</td>
+    <td>at vedtage</td>
+    <td>vedtager</td>
+    <td>vedtog</td>
+    <td>har vedtaget</td>
+    <td>havde vedtaget</td>
+    <td>vedtag</td>
+  </tr>
+  <tr>
+    <td>to weigh</td>
+    <td>at veje</td>
+    <td>vejer</td>
+    <td>vejede</td>
+    <td>har vejet</td>
+    <td>havde vejet</td>
+    <td>vej</td>
+  </tr>
+  <tr>
+    <td>to reverse</td>
+    <td>at vende</td>
+    <td>vender</td>
+    <td>vendte</td>
+    <td>har vendt</td>
+    <td>havde vendt</td>
+    <td>vend</td>
+  </tr>
+  <tr>
+    <td>to wait</td>
+    <td>at vente</td>
+    <td>venter</td>
+    <td>ventede</td>
+    <td>har ventet</td>
+    <td>havde ventet</td>
+    <td>vent</td>
+  </tr>
+  <tr>
+    <td>to know</td>
+    <td>at vide</td>
+    <td>ved</td>
+    <td>vidste</td>
+    <td>har vidst</td>
+    <td>havde vidst</td>
+    <td>vid</td>
+  </tr>
+  <tr>
+    <td>to want</td>
+    <td>at ville</td>
+    <td>vil</td>
+    <td>ville</td>
+    <td>har villet</td>
+    <td>havde villet</td>
+    <td>vil</td>
+  </tr>
+  <tr>
+    <td>to win</td>
+    <td>at vinde</td>
+    <td>vinder</td>
+    <td>vandt</td>
+    <td>har vundet</td>
+    <td>havde vundet</td>
+    <td>vind</td>
+  </tr>
+  <tr>
+    <td>to act</td>
+    <td>at virke</td>
+    <td>virker</td>
+    <td>virkede</td>
+    <td>har virket</td>
+    <td>havde virket</td>
+    <td>virk</td>
+  </tr>
+  <tr>
+    <td>to show</td>
+    <td>at vise</td>
+    <td>viser</td>
+    <td>viste</td>
+    <td>har vist</td>
+    <td>havde vist</td>
+    <td>vis</td>
+  </tr>
+  <tr>
+    <td>to grow</td>
+    <td>at vokse</td>
+    <td>vokser</td>
+    <td>voksede</td>
+    <td>er vokset</td>
+    <td>var vokset</td>
+    <td>voks</td>
+  </tr>
+  <tr>
+    <td>to evaluate</td>
+    <td>at vurdere</td>
+    <td>vurderer</td>
+    <td>vurderede</td>
+    <td>har vurderet</td>
+    <td>havde vurderet</td>
+    <td>vurder</td>
+  </tr>
+  <tr>
+    <td>to wake</td>
+    <td>at vække</td>
+    <td>vækker</td>
+    <td>vækkede</td>
+    <td>har vækket</td>
+    <td>havde vækket</td>
+    <td>væk</td>
+  </tr>
+  <tr>
+    <td>to select</td>
+    <td>at vælge</td>
+    <td>vælger</td>
+    <td>valgte</td>
+    <td>har valgt</td>
+    <td>havde valgt</td>
+    <td>vælg</td>
+  </tr>
+  <tr>
+    <td>to topple</td>
+    <td>at vælte</td>
+    <td>vælter</td>
+    <td>væltede</td>
+    <td>har væltet</td>
+    <td>havde væltet</td>
+    <td>vælt</td>
+  </tr>
+  <tr>
+    <td>to be</td>
+    <td>at være</td>
+    <td>er</td>
+    <td>var</td>
+    <td>har været</td>
+    <td>havde været</td>
+    <td>vær</td>
+  </tr>
+  <tr>
+    <td>to wake up</td>
+    <td>at vågne</td>
+    <td>vågner</td>
+    <td>vågnede</td>
+    <td>er vågnet</td>
+    <td>var vågnet</td>
+    <td>vågn</td>
+  </tr>
+  <tr>
+    <td>to provide</td>
+    <td>at yde</td>
+    <td>yder</td>
+    <td>ydede</td>
+    <td>har ydet</td>
+    <td>havde ydet</td>
+    <td>yd</td>
+  </tr>
+  <tr>
+    <td>to change</td>
+    <td>at ændre</td>
+    <td>ændrer</td>
+    <td>ændrede</td>
+    <td>har ændret</td>
+    <td>havde ændret</td>
+    <td>ændr</td>
+  </tr>
+  <tr>
+    <td>to destroy</td>
+    <td>at ødelægge</td>
+    <td>ødelægger</td>
+    <td>ødelagde</td>
+    <td>har ødelagt</td>
+    <td>havde ødelagt</td>
+    <td>ødelæg</td>
+  </tr>
+  <tr>
+    <td>to increase</td>
+    <td>at øge</td>
+    <td>øger</td>
+    <td>øgede</td>
+    <td>har øget</td>
+    <td>havde øget</td>
+    <td>øg</td>
+  </tr>
+  <tr>
+    <td>to wish</td>
+    <td>at ønske</td>
+    <td>ønsker</td>
+    <td>ønskede</td>
+    <td>har ønsket</td>
+    <td>havde ønsket</td>
+    <td>ønsk</td>
+  </tr>
+  <tr>
+    <td>to open</td>
+    <td>at åbne</td>
+    <td>åbner</td>
+    <td>åbnede</td>
+    <td>har åbnet</td>
+    <td>havde åbnet</td>
+    <td>åbn</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+
+    td0 = tr[i].getElementsByTagName("td")[0];
+    td1 = tr[i].getElementsByTagName("td")[1];
+    td2 = tr[i].getElementsByTagName("td")[2];
+    td3 = tr[i].getElementsByTagName("td")[3];
+    td4 = tr[i].getElementsByTagName("td")[4];
+    td5 = tr[i].getElementsByTagName("td")[5];
+    td6 = tr[i].getElementsByTagName("td")[6];
+
+    if (td0 && td1 && td2 && td3 && td4 && td5 && td6) {
+      txtValue0 = td0.textContent || td0.innerText;
+      txtValue1 = td1.textContent || td1.innerText;
+      txtValue2 = td2.textContent || td2.innerText;
+      txtValue3 = td3.textContent || td3.innerText;
+      txtValue4 = td4.textContent || td4.innerText;
+      txtValue5 = td5.textContent || td5.innerText;
+      txtValue6 = td6.textContent || td6.innerText;
+      if (
+        txtValue0.toUpperCase().indexOf(filter) > -1 ||
+        txtValue1.toUpperCase().indexOf(filter) > -1 ||
+        txtValue2.toUpperCase().indexOf(filter) > -1 ||
+        txtValue3.toUpperCase().indexOf(filter) > -1 ||
+        txtValue4.toUpperCase().indexOf(filter) > -1 ||
+        txtValue5.toUpperCase().indexOf(filter) > -1 ||
+        txtValue6.toUpperCase().indexOf(filter) > -1
+
+        /*
+        txtValue0.toUpperCase() == filter ||
+        txtValue1.toUpperCase() == filter ||
+        txtValue2.toUpperCase() == filter ||
+        txtValue3.toUpperCase() == filter ||
+        txtValue4.toUpperCase() == filter ||
+        txtValue5.toUpperCase() == filter ||
+        txtValue6.toUpperCase() == filter
+        */
+
+        /*
+        txtValue0.toUpperCase().startsWith(filter) ||
+        txtValue1.toUpperCase().startsWith(filter) ||
+        txtValue2.toUpperCase().startsWith(filter) ||
+        txtValue3.toUpperCase().startsWith(filter) ||
+        txtValue4.toUpperCase().startsWith(filter) ||
+        txtValue5.toUpperCase().startsWith(filter) ||
+        txtValue6.toUpperCase().startsWith(filter)
+        */
+        ) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
